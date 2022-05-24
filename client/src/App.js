@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+//imports
+import { useState, useEffect } from "react";
+
+import DesktopNavbar from "./Components/DesktopNavbar";
+import MobileNavbar from "./Components/MobileNavbar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    //the width of the window
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    //the width threshold for mobile elements
+    const WIDTH_THRESHOLD = 1000;
+
+    useEffect(() => {
+        //handle the resizing of the window to render desktop vs mobile elements
+        function handleResize(e) {
+            setWindowWidth(window.innerWidth);
+        }
+
+        window.addEventListener("resize", handleResize);
+    }, []);
+
+    return (
+        <div className="App">
+            {/* load the navbar */}
+            {windowWidth > WIDTH_THRESHOLD ? <DesktopNavbar /> : <MobileNavbar />}
+        </div>
+    );
 }
 
 export default App;
