@@ -1,8 +1,12 @@
 //imports
+import "./App.css";
+
 import { useState, useEffect } from "react";
 
 import DesktopNavbar from "./Components/DesktopNavbar";
 import MobileNavbar from "./Components/MobileNavbar";
+
+import Hero from "./Components/Hero";
 
 function App() {
     //the width of the window
@@ -23,6 +27,7 @@ function App() {
         <div className="App">
             {/* load the navbar */}
             {windowWidth > WIDTH_THRESHOLD ? <DesktopNavbar /> : <MobileNavbar />}
+            <Hero />
         </div>
     );
 }
