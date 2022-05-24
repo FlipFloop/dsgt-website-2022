@@ -1,6 +1,6 @@
 //imports
 
 const MobileNavbar = (params) => {
-    return <div className="mobile-navbar">b</div>;
+    return <div {...params} className="mobile-navbar">mobile</div>;
 };
 export default MobileNavbar;
