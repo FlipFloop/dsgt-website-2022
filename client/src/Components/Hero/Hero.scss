@@ -6,8 +6,8 @@
 
     z-index: 1;
 
-    border: 1px solid blue;
-    .hero-wrapper {
+    //border: 1px solid blue;
+    > .hero-wrapper {
         display: block;
         position: relative;
         height: 100%;

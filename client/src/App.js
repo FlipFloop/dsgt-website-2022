@@ -8,6 +8,8 @@ import MobileNavbar from "./Components/MobileNavbar";
 
 import Hero from "./Components/Hero";
 
+import Footer from "./Components/Footer";
+
 function App() {
     //the width of the window
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -28,6 +30,8 @@ function App() {
             {/* load the navbar */}
             {windowWidth > WIDTH_THRESHOLD ? <DesktopNavbar /> : <MobileNavbar />}
             <Hero />
+
+            <Footer />
         </div>
     );
 }
