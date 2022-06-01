@@ -1,12 +1,12 @@
 //imports
 import "./Hero.css";
 
-import spacebg from "./dsgt background 1-2.svg";
+import bg from "./background-design-1.svg";
 
 const Hero = (params) => {
     return (
         <div {...params} id="hero">
-            <img className="hero-bg-img" src={spacebg}/>
+            <div className="hero-bg-img"></div>
             <div className="hero-wrapper">test</div>
         </div>
     );
