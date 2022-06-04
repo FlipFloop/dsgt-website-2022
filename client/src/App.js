@@ -3,8 +3,7 @@ import "./App.css";
 
 import { useState, useEffect } from "react";
 
-import DesktopNavbar from "./Components/DesktopNavbar";
-import MobileNavbar from "./Components/MobileNavbar";
+import Navbar from "./Components/Navbar";
 
 import Hero from "./Components/Hero";
 
@@ -13,8 +12,6 @@ import Footer from "./Components/Footer";
 function App() {
     //the width of the window
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    //the width threshold for mobile elements
-    const WIDTH_THRESHOLD = 1000;
 
     useEffect(() => {
         //handle the resizing of the window to render desktop vs mobile elements
@@ -28,7 +25,7 @@ function App() {
     return (
         <div className="App">
             {/* load the navbar */}
-            {windowWidth > WIDTH_THRESHOLD ? <DesktopNavbar /> : <MobileNavbar />}
+            <Navbar screen_width={windowWidth} />
             <Hero />
 
             <Footer />
