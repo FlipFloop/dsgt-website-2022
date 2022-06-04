@@ -11,7 +11,6 @@ const Navbar = (params) => {
 
     useEffect(() => {
         setWindowWidth(params.screen_width);
-        console.log(windowWidth);
     }, [params.screen_width]);
 
     if (windowWidth >= WIDTH_THRESHOLD) {
