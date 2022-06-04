@@ -10,10 +10,10 @@
     //border: 1px solid blue;
 
     .hero-major {
-        font-size: 3vw;
-        text-align: center;
+        font-size: 4.5vw;
+        text-align: right;
         width: fit-content;
-        margin: 0 auto;
+        //margin: 0 auto;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         letter-spacing: 5px;
         text-shadow: -2px 2px rgb(32, 163, 158);
@@ -21,7 +21,57 @@
         //-webkit-text-stroke-color: #ecae58;
         -webkit-text-stroke-color: rgb(110, 110, 110);
         color: transparent;
+        letter-spacing: 0px;
+        padding: 10px 0;
     }
+
+    .hero-minor {
+        font-size: 3vw;
+        text-align: right;
+        width: fit-content;
+        //margin: 0 auto;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 5px;
+        text-shadow: -2px 2px #ecae58;
+        -webkit-text-stroke-width: 1.5px;
+        //-webkit-text-stroke-color: #ecae58;
+        -webkit-text-stroke-color: rgb(110, 110, 110);
+        color: transparent;
+        letter-spacing: 0px;
+        padding: 10px 0;
+    }
+
+    .apply-button {
+        display: block;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        margin: 10px 0;
+        padding: 10px 20px;
+
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1vw;
+        text-transform: uppercase;
+        font-weight: 900;
+        background: none;
+        border: none;
+        border-radius: 4px;
+
+        color: rgb(32, 163, 158);
+        background-color: #ecae58;
+        box-shadow: -2px 2px 2px #be8c46;
+        cursor: pointer;
+        user-select: none;
+
+        transition: 0.3s all ease;
+        &:hover {
+            filter: brightness(0.8);
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
     > .hero-blob {
         display: block;
         position: absolute;
@@ -41,10 +91,20 @@
         padding-top: 6em;
 
         border: 1px solid green;
+        > .hero-img-test {
+            display: block;
+            position: absolute;
+            width: 40%;
+            height: 30vh;
+            background-color: red;
+            right: 0;
+            top: 6em;
+        }
 
         > .hero-right {
             display: flex;
             justify-content: center;
+            align-items: flex-end;
             flex-direction: column;
             position: relative;
             //centered height
@@ -52,9 +112,10 @@
             width: 50%;
             float: right;
             overflow: hidden;
+            padding: 0 20px;
 
             //border: 1px solid blue;
-            
+
             > .hero-logo {
                 width: 65%;
                 height: auto;

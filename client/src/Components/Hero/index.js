@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 import hero2 from "../../assets/images/blobs/hero--export.svg";
 import hero2mobile from "../../assets/images/blobs/hero2-mobile--export.svg";
-import herologo from "../../assets/images/dsgt/square-logo.png";
+//import herologo from "../../assets/images/dsgt/square-logo.png";
 
 /**
  * The hero (landing view) of the page
@@ -31,8 +31,10 @@ const Hero = (params) => {
             )}
             <div className="hero-wrapper">
                 <div className="hero-right">
-                    <img className="hero-logo" src={herologo} />
-                    <h1 className="hero-major">Data Science @ Georgia Tech</h1>
+                    {/* <img className="hero-logo" src={herologo} /> */}
+                    <h1 className="hero-major">Data Science<br/>@ Georgia Tech</h1>
+                    <h1 className="hero-minor">Georgia Tech's largest data science organization</h1>
+                    <a className="apply-button">Apply</a>
                 </div>
             </div>
         </div>
