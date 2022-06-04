@@ -3,10 +3,12 @@ import "./App.css";
 
 import { useState, useEffect } from "react";
 
+import Background from "./Components/Background";
+
 import Navbar from "./Components/Navbar";
 
 import Hero from "./Components/Hero";
-
+import SectionA from "./Components/SectionA";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -24,10 +26,13 @@ function App() {
 
     return (
         <div className="App">
+            <Background />
             {/* load the navbar */}
             <Navbar screen_width={windowWidth} />
-            <Hero />
-
+            <Hero screen_width={windowWidth} />
+            <SectionA>
+                <h1>test difu dlkfjds kfd </h1>
+            </SectionA>
             <Footer />
         </div>
     );

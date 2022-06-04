@@ -1,6 +1,11 @@
 //imports
 import "./Footer.css";
 
+/**
+ * The footer of the web page
+ * @param {*} params 
+ * @returns 
+ */
 const Footer = (params) => {
     return (
         <div className="footer">

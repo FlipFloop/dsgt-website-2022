@@ -12,11 +12,12 @@
         display: flex;
         position: relative;
         width: 100%;
+        max-width: 1600px;
         height: fit-content;
         flex-wrap: wrap;
         flex-direction: row;
 
-        margin: 30px;
+        margin: 30px auto;
         border: 1px dashed green;
 
         .major {

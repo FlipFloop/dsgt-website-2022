@@ -2,15 +2,14 @@
   display: block;
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 122vh;
   z-index: 1;
-  background-color: #343434;
+  -webkit-animation: fade-in 1s;
+          animation: fade-in 1s;
 }
 
 #hero .hero-major {
-  font-size: 4em;
+  font-size: 3vw;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -24,35 +23,28 @@
   color: transparent;
 }
 
-#hero > .hero-bg {
+#hero > .hero-blob {
   display: block;
   position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url("./background-design-1.png");
-  background-repeat: repeat;
-  background-size: 100px;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
-}
-
-#hero > .hero-bg-img {
-  display: block;
-  position: relative;
-  z-index: 0;
-  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 #hero > .hero-wrapper {
   display: block;
-  position: absolute;
-  height: calc(100% - 6em);
+  position: relative;
+  height: calc(100vh);
   width: 100%;
-  top: 6em;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 6em;
+  border: 1px solid green;
 }
 
-#hero > .hero-wrapper > .hero-right {
+#hero > .hero-wrapper > .hero-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,15 +56,33 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  height: calc(100vh - 12em);
-  width: 55%;
-  float: right;
+  height: calc(100% - 6em);
+  width: 50%;
+  float: left;
   overflow: hidden;
 }
 
-#hero > .hero-wrapper > .hero-right > .hero-logo {
-  height: 70%;
-  width: auto;
+#hero > .hero-wrapper > .hero-left > .hero-logo {
+  width: 65%;
+  height: auto;
   margin: 0 auto;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=Hero.css.map */
