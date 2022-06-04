@@ -3,7 +3,7 @@ import "./Hero.css";
 
 import { useState, useEffect } from "react";
 
-import hero2 from "../../assets/images/blobs/hero2--export.svg";
+import hero2 from "../../assets/images/blobs/hero--export.svg";
 import hero2mobile from "../../assets/images/blobs/hero2-mobile--export.svg";
 import herologo from "../../assets/images/dsgt/square-logo.png";
 
@@ -30,7 +30,7 @@ const Hero = (params) => {
                 <img className="hero-blob" src={hero2mobile} />
             )}
             <div className="hero-wrapper">
-                <div className="hero-left">
+                <div className="hero-right">
                     <img className="hero-logo" src={herologo} />
                     <h1 className="hero-major">Data Science @ Georgia Tech</h1>
                 </div>

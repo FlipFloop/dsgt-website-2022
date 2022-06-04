@@ -2,9 +2,8 @@
   display: block;
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 50vh;
+  margin: 50px 0;
 }
 
 .section-a > .section-a-wrapper {
@@ -15,5 +14,19 @@
   max-width: 1600px;
   margin: 0 auto;
   border: 1px solid red;
+}
+
+.section-a > .section-a-wrapper > .blob {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  top: 10%;
+  left: 0;
+  background-image: url("../../assets/images/blobs/blob1--export.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 50px;
+  border: 1px dashed red;
 }
 /*# sourceMappingURL=SectionA.css.map */

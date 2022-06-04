@@ -27,9 +27,9 @@ const Navbar = (params) => {
                     <div className="nav-wrapper-flex-left">
                         <img className="logo" src={logo} />
                         <h1 className="logo-text">
-                            Data Science @
+                            Data Science
                             <br />
-                            Georgia Tech
+                            @ Georgia Tech
                         </h1>
                     </div>
                     <div className="nav-wrapper-flex-right">

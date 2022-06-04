@@ -42,7 +42,7 @@
 
         border: 1px solid green;
 
-        > .hero-left {
+        > .hero-right {
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -50,7 +50,7 @@
             //centered height
             height: calc(100% - 6em);
             width: 50%;
-            float: left;
+            float: right;
             overflow: hidden;
 
             //border: 1px solid blue;

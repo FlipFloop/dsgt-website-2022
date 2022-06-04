@@ -44,7 +44,7 @@
   border: 1px solid green;
 }
 
-#hero > .hero-wrapper > .hero-left {
+#hero > .hero-wrapper > .hero-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,11 +58,11 @@
   position: relative;
   height: calc(100% - 6em);
   width: 50%;
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
-#hero > .hero-wrapper > .hero-left > .hero-logo {
+#hero > .hero-wrapper > .hero-right > .hero-logo {
   width: 65%;
   height: auto;
   margin: 0 auto;
