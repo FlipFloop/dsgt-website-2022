@@ -22,4 +22,18 @@
   text-transform: uppercase;
   font-size: 4vw;
 }
+
+.section-a > .section-a-wrapper .minor {
+  color: #ecae58;
+  text-shadow: -1px 1px 1px rgba(236, 174, 88, 0.5);
+  text-align: left;
+  font-size: 3vw;
+}
+
+.section-a > .section-a-wrapper .mini {
+  color: #fff;
+  text-align: left;
+  font-size: 2vw;
+  font-weight: normal;
+}
 /*# sourceMappingURL=SectionA.css.map */

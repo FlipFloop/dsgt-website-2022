@@ -32,8 +32,10 @@ function App() {
             <Hero screen_width={windowWidth} />
             <SectionA>
                 <h1 className="major">test difu dlkfjds kfd </h1>
+                <h2 className="minor">test difu dlkfjds kfd </h2>
+                <h3 className="mini">test difu dlkfjds kfd </h3>
             </SectionA>
-            <Footer />
+            <Footer screen_width={windowWidth} />
         </div>
     );
 }

@@ -6,6 +6,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 300px;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -13,7 +14,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid red;
+  padding-top: 80px;
+}
+
+.footer > .footer-blob {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 80px);
+  top: -80px;
+  left: 0;
 }
 
 .footer > .footer-wrapper {
@@ -32,8 +42,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 30px auto;
-  border: 1px dashed green;
 }
 
 .footer > .footer-wrapper .major {
@@ -42,10 +56,14 @@
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
+  padding: 20px 50px;
+  font-weight: 700;
 }
 
 .footer > .footer-wrapper .footer-section {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -54,17 +72,46 @@
   width: -moz-fit-content;
   width: fit-content;
   max-width: 50%;
-  padding: 0 20px;
-  overflow: hidden;
-  border: 1px dashed red;
+  padding: 20px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer > .footer-wrapper .footer-section > .minor {
   word-wrap: break-word;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding-bottom: 5px;
 }
 
 .footer > .footer-wrapper .footer-section > .mini {
   word-wrap: break-word;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.footer > .footer-wrapper .footer-section > a.mini {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.footer > .footer-wrapper .footer-section > a.mini:hover {
+  text-decoration: underline;
+}
+
+.footer > .footer-wrapper .footer-section > a.mini:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.footer > .footer-wrapper .footer-section > .mini,
+.footer > .footer-wrapper .footer-section .minor {
+  display: block;
 }
 
 .footer > .footer-wrapper .link {

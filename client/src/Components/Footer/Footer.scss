@@ -2,11 +2,22 @@
     display: flex;
     position: relative;
     height: fit-content;
+    min-height: 300px;
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
 
-    border: 1px solid red;
+    //border: 1px dashed blue;
+    padding-top: 80px;
+
+    > .footer-blob {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 80px);
+        top: -80px;
+        left: 0;
+    }
 
     > .footer-wrapper {
         display: flex;
@@ -16,31 +27,54 @@
         height: fit-content;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
 
         margin: 30px auto;
-        border: 1px dashed green;
+        //border: 1px dashed green;
 
         .major {
             font-size: 2em;
             width: fit-content;
             text-align: center;
+            padding: 20px 50px;
+            font-weight: 700;
         }
         .footer-section {
-            display: block;
+            display: flex;
             position: relative;
             height: fit-content;
             width: fit-content;
             max-width: 50%;
+            padding: 20px 20px;
+            flex-direction: column;
+            align-items: flex-start;
 
-            padding: 0 20px;
-            overflow: hidden;
-
-            border: 1px dashed red;
+            //border: 1px dashed red;
             > .minor {
                 word-wrap: break-word;
+                font-weight: 700;
+                letter-spacing: -1px;
+                padding-bottom: 5px;
             }
             > .mini {
                 word-wrap: break-word;
+                padding-left: 20px;
+                font-weight: 500;
+            }
+            > a.mini {
+                transition: 0.3s all ease;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+
+            > .mini,
+            .minor {
+                display: block;
             }
         }
         .link {
