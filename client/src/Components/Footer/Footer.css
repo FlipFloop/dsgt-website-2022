@@ -14,15 +14,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .footer > .footer-blob {
   display: block;
   position: absolute;
   width: 100%;
-  height: calc(100% + 80px);
-  top: -80px;
+  height: calc(100% + 50px);
+  top: -50px;
   left: 0;
 }
 
