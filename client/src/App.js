@@ -31,7 +31,7 @@ function App() {
             <Navbar screen_width={windowWidth} />
             <Hero screen_width={windowWidth} />
             <SectionA>
-                <h1>test difu dlkfjds kfd </h1>
+                <h1 className="major">test difu dlkfjds kfd </h1>
             </SectionA>
             <Footer />
         </div>
