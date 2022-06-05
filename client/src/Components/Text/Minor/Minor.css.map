@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EAGR,MAAM,EAAE,QAAQ;EAChB,SAAS,EAAE,KAAK;CACnB;;AAED,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,OAAO;EACd,WAAW,EAAG,IAAG,CAAC,GAAG,CAAC,GAAG,CAAc,wBAAO;CACjD;;AAED,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,OAAO;EACd,WAAW,EAAG,IAAG,CAAC,GAAG,CAAC,GAAG,CAAc,uBAAO;CACjD",
+    "sources": [
+        "Minor.scss"
+    ],
+    "names": [],
+    "file": "Minor.css"
+}

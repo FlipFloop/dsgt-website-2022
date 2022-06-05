@@ -33,7 +33,7 @@ const Hero = (params) => {
                 <div className="hero-right">
                     {/* <img className="hero-logo" src={herologo} /> */}
                     <h1 className="hero-major">Data Science<br/>@ Georgia Tech</h1>
-                    <h1 className="hero-minor">Georgia Tech's largest data science organization</h1>
+                    {/* <h1 className="hero-minor">Georgia Tech's largest data science organization</h1> */}
                     <button type="button" className="apply-button">Apply</button>
                 </div>
             </div>

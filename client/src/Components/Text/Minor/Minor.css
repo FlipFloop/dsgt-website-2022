@@ -1,0 +1,15 @@
+.minor-text {
+  margin: 0 1.75em;
+  font-size: 1.5em;
+}
+
+.minor-a {
+  color: #74b1aa;
+  text-shadow: -1px 1px 1px rgba(103, 160, 154, 0.5);
+}
+
+.minor-b {
+  color: #ecae58;
+  text-shadow: -1px 1px 1px rgba(236, 174, 88, 0.5);
+}
+/*# sourceMappingURL=Minor.css.map */

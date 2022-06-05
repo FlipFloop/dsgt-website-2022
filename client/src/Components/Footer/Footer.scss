@@ -8,14 +8,14 @@
     flex-direction: row;
 
     //border: 1px dashed blue;
-    padding-top: 50px;
+    padding-top: 100px;
 
     > .footer-blob {
         display: block;
         position: absolute;
         width: 100%;
-        height: calc(100% + 50px);
-        top: -50px;
+        height: calc(100%);
+        top: 0px;
         left: 0;
     }
 

@@ -1,0 +1,15 @@
+.section {
+    display: block;
+    position: relative;
+    width: calc(100% - 100px);
+    height: fit-content;
+    margin: 50px 50px;
+    > .section-wrapper {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
