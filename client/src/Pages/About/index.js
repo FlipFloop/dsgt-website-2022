@@ -2,8 +2,9 @@
 import { useState, useEffect  } from "react";
 
 import Background from "../../Components/Background";
+import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
-import Major from "../../Components/Text/Major";
+import SmallHero from "../../Components/SmallHero";
 
 const About = (params) => {
     //the width of the window
@@ -21,7 +22,9 @@ const About = (params) => {
         <div {...params} id="about-page">
             <Background />
             <Navbar screen_width={windowWidth} />
-            <Major>About Us</Major>
+            <SmallHero title="Meet The Team" />
+
+            <Footer />
         </div>
     );
 };

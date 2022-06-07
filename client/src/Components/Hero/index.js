@@ -3,9 +3,9 @@ import "./Hero.css";
 
 import { useState, useEffect } from "react";
 
-import hero2 from "../../assets/images/blobs/hero--export.svg";
+import hero3 from "../../assets/images/blobs/hero3--export.svg";
 import hero2mobile from "../../assets/images/blobs/hero2-mobile--export.svg";
-//import herologo from "../../assets/images/dsgt/square-logo.png";
+import herologo from "../../assets/images/dsgt/square-logo.png";
 
 /**
  * The hero (landing view) of the page
@@ -25,16 +25,26 @@ const Hero = (params) => {
     return (
         <div {...params} id="hero">
             {windowWidth >= WIDTH_THRESHOLD ? (
-                <img className="hero-blob" src={hero2} />
+                <img className="hero-blob" src={hero3} />
             ) : (
                 <img className="hero-blob" src={hero2mobile} />
             )}
             <div className="hero-wrapper">
-                <div className="hero-right">
+                <div className="hero-left">
                     {/* <img className="hero-logo" src={herologo} /> */}
-                    <h1 className="hero-major">Data Science<br/>@ Georgia Tech</h1>
+                    <h1 className="hero-major">
+                        Data Science
+                        <br />@ Georgia Tech
+                    </h1>
                     {/* <h1 className="hero-minor">Georgia Tech's largest data science organization</h1> */}
-                    <button type="button" className="apply-button">Apply</button>
+                    <div className="hero-sep"></div>
+                    {/* <button type="button" className="apply-button">Apply</button> */}
+                    <a className="learn-more">
+                        Learn More<span className="arrow">→</span>
+                    </a>
+                </div>
+                <div className="hero-right">
+                    <img className="hero-logo" src={herologo} alt="DSGT logo"/>
                 </div>
             </div>
         </div>

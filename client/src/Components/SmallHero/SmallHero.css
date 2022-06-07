@@ -1,0 +1,48 @@
+.small-hero {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  z-index: 1;
+  -webkit-animation: fade-in 1s;
+          animation: fade-in 1s;
+}
+
+.small-hero > .hero-blob {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.small-hero > .small-hero-wrapper {
+  display: block;
+  position: relative;
+  height: calc(100vh);
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 6em;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=SmallHero.css.map */
