@@ -25,9 +25,9 @@ const Hero = (params) => {
     return (
         <div {...params} id="hero">
             {windowWidth >= WIDTH_THRESHOLD ? (
-                <img className="hero-blob" src={hero3} />
+                <img className="hero-blob" src={hero3} alt="blob" />
             ) : (
-                <img className="hero-blob" src={hero2mobile} />
+                <img className="hero-blob" src={hero2mobile} alt="blob" />
             )}
             <div className="hero-wrapper">
                 <div className="hero-left">
@@ -39,7 +39,7 @@ const Hero = (params) => {
                     {/* <h1 className="hero-minor">Georgia Tech's largest data science organization</h1> */}
                     <div className="hero-sep"></div>
                     {/* <button type="button" className="apply-button">Apply</button> */}
-                    <a className="learn-more">
+                    <a className="learn-more" href="/about">
                         Learn More<span className="arrow">→</span>
                     </a>
                 </div>

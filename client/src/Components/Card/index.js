@@ -6,7 +6,7 @@ const Card = (params) => {
         <div className="card">
             {params.img ? (
                 <div className="card-img">
-                    <img src={params.img} />
+                    <img src={params.img} alt="project logo" />
                 </div>
             ) : (
                 ""

@@ -35,7 +35,7 @@ const Navbar = (params) => {
             <div {...params} className="desktop-navbar">
                 <div className="nav-wrapper">
                     <div className="nav-wrapper-flex-left">
-                        <img className="logo" src={logo} />
+                        <img className="logo" src={logo} alt="DSGT Logo"/>
                         <h1 className="logo-text">DSGT</h1>
                     </div>
                     <div className="nav-wrapper-flex-right">
@@ -62,7 +62,7 @@ const Navbar = (params) => {
             <div {...params} className="mobile-navbar">
                 <div className="nav-wrapper">
                     <div className="nav-wrapper-flex-center">
-                        <img className="logo" src={logo} />
+                        <img className="logo" src={logo} alt="DSGT Logo"/>
                         <h1 className="logo-text">DSGT</h1>
                     </div>
                 </div>
