@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //import pages
 import Home from "./Pages/Home";
+import About from "./Pages/About";
 
 function App() {
     // //the width of the window
@@ -25,7 +26,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<h1>test</h1>} />
+                    <Route path="/about" element={<About />} />
                 </Routes>
             </BrowserRouter>
         </div>

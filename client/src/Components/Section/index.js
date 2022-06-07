@@ -3,7 +3,7 @@ import "./Section.css";
 
 const Section = (params) => {
     return (
-        <div className="section">
+        <div className="section" {...params}>
             <div className="section-wrapper">{params.children}</div>
         </div>
     );

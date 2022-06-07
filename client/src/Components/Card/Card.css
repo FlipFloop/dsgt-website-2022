@@ -9,6 +9,13 @@
           box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   margin: 20px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 
 .card > .card-img {
@@ -31,6 +38,8 @@
 .card > .card-heading {
   margin: 6px 40px;
   font-size: 1.4em;
+  color: #20a39e;
+  text-shadow: -1px 1px 1px rgba(37, 139, 136, 0.562);
 }
 
 .card > .card-text {

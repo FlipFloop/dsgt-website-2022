@@ -1,4 +1,6 @@
 //imports
+import "./Home.css";
+
 import { useState, useEffect } from "react";
 
 import Background from "../../Components/Background";
@@ -11,8 +13,17 @@ import Minor from "../../Components/Text/Minor";
 import Card from "../../Components/Card";
 import Footer from "../../Components/Footer";
 
+//import chart data
+import { ClassData, MajorData } from "../../assets/Data/demographics";
+
+//import images
 import storm from "../../assets/images/logos/storm.png";
 import mentra from "../../assets/images/logos/Mentra.png";
+
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Pie } from "react-chartjs-2";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Home = (params) => {
     //the width of the window
@@ -26,6 +37,7 @@ const Home = (params) => {
 
         window.addEventListener("resize", handleResize);
     }, []);
+
     return (
         <div {...params} id="home-page">
             <Background />
@@ -54,8 +66,14 @@ const Home = (params) => {
                     members. Here's how we look like:
                 </Mini>
                 <Minor>CLASS DEMOGRAPHICS</Minor>
+                <div className="pie-chart">
+                    <Pie data={ClassData} options={{ color: "#fff" }} />
+                </div>
+
                 <Minor type="b">MAJOR DEMOGRAPHICS</Minor>
-                <Minor>MINORITY DEMOGRAPHICS</Minor>
+                <div className="pie-chart">
+                    <Pie data={MajorData} options={{ color: "#fff" }} />
+                </div>
             </Section>
             <Section id="projects">
                 <Major type="a">Projects</Major>

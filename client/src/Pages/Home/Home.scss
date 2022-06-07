@@ -1,0 +1,22 @@
+.cards {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#stats {
+    .pie-chart {
+        display: block;
+        position: relative;
+        height: 40vh;
+        width: 40vh;
+        margin: 10px auto;
+
+        border: 1px solid white;
+    }
+}
