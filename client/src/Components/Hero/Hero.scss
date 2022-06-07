@@ -11,6 +11,11 @@ $hero-foreground-color: rgb(229, 230, 219);
     animation: fade-in 1s;
     //border: 1px solid blue;
 
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
     .hero-sep {
         display: block;
         position: relative;
