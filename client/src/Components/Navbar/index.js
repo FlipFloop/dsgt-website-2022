@@ -41,6 +41,9 @@ const Navbar = (params) => {
                         <h1 className="logo-text">DSGT</h1>
                     </div>
                     <div className="nav-wrapper-flex-right">
+                        <Link className="nav-menuitem" to="/">
+                            Home
+                        </Link>
                         <HashLink className="nav-menuitem" smooth to="#about">
                             Meet The Team
                         </HashLink>
@@ -79,6 +82,9 @@ const Navbar = (params) => {
                 </label>
                 <div className="mobile-navbar-menu">
                     <div className="nav-menu-flex">
+                        <Link className="nav-menuitem" to="/">
+                            Home
+                        </Link>
                         <HashLink className="nav-menuitem" smooth to="#about">
                             Meet The Team
                         </HashLink>

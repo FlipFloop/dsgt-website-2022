@@ -1,30 +1,105 @@
+$hero-foreground-color: rgb(229, 230, 219);
+
 .small-hero {
     display: block;
     position: relative;
     width: 100%;
     //height: 100vh;
-    height: 120vh;
+    height: calc(40vh - 6em);
     z-index: 1;
 
     animation: fade-in 1s;
 
-    > .hero-blob {
+    .hero-sep {
+        display: block;
+        position: relative;
+        width: 8em;
+        height: 2px;
+        border-bottom: 2px solid $hero-foreground-color;
+        margin: 30px 0;
+        transform: translateX(4px);
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -6px;
+            top: -3px;
+
+            width: 3px;
+            height: 3px;
+            border: 2px solid $hero-foreground-color;
+            border-radius: 100%;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -6px;
+            top: -3px;
+
+            width: 3px;
+            height: 3px;
+            border: 2px solid $hero-foreground-color;
+            border-radius: 100%;
+        }
+    }
+
+    > .small-hero-blob {
         display: block;
         position: absolute;
         z-index: -1;
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         top: 0;
-        left: 0;
+        right: 0;
     }
     > .small-hero-wrapper {
         display: block;
         position: relative;
-        height: calc(100vh);
+        height: 100%;
         width: 100%;
         max-width: 1600px;
         margin: 0 auto;
         padding-top: 6em;
+
+        > .small-hero-left {
+            display: flex;
+            position: relative;
+            height: calc(40vh - 6em);
+            width: 50%;
+            float: left;
+            padding: 0 20px;
+
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            //border: 1px solid red;
+
+            > .major {
+                color: $hero-foreground-color;
+                font-weight: 700;
+                text-align: left;
+                width: fit-content;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                text-shadow: 2px 2px $hero-foreground-color;
+                -webkit-text-stroke-width: 1.5px;
+                //-webkit-text-stroke-color: #ecae58;
+                -webkit-text-stroke-color: $hero-foreground-color;
+                color: transparent;
+                letter-spacing: 0px;
+                font-size: 4em;
+            }
+            > .minor {
+                color: $hero-foreground-color;
+                font-weight: normal;
+                text-align: left;
+                width: fit-content;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: -1px;
+                font-size: 1.2em;
+            }
+        }
     }
 }
 
@@ -34,5 +109,15 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .small-hero {
+        > .small-hero-wrapper {
+            > .small-hero-left {
+                width: 100%;
+            }
+        }
     }
 }

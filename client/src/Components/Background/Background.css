@@ -7,8 +7,6 @@
   width: 100%;
   z-index: -1;
   background-color: #31323B;
-  -webkit-animation: fade-in 1s;
-          animation: fade-in 1s;
 }
 
 .wavy-bg > .bg-nav {

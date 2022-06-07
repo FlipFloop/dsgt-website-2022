@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,KAAK;EACd,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EAEb,aAAa,EAAE,GAAG;EAElB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAc,kBAAO;CACnD",
+    "sources": [
+        "TeamCard.scss"
+    ],
+    "names": [],
+    "file": "TeamCard.css"
+}
