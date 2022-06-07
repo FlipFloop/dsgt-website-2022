@@ -2,7 +2,7 @@
 import "./App.css";
 
 //import react stuff
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 //import pages
 import Home from "./Pages/Home";
@@ -23,12 +23,12 @@ function App() {
 
     return (
         <div className="App">
-            <BrowserRouter>
+            <Router>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/*" element={<Home />} />
                     <Route path="/about" element={<About />} />
                 </Routes>
-            </BrowserRouter>
+            </Router>
         </div>
     );
 }
