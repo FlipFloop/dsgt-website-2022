@@ -2,6 +2,7 @@
 import "./Footer.css";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import footerblob from "../../assets/images/blobs/footer--export.svg";
 import footerblobmobile from "../../assets/images/blobs/footer-mobile--export.svg";
@@ -23,44 +24,44 @@ const Footer = (params) => {
     return (
         <div className="footer">
             {windowWidth >= WIDTH_THRESHOLD ? (
-                <img className="footer-blob" src={footerblob} />
+                <img className="footer-blob" src={footerblob} alt="blob" />
             ) : (
-                <img className="footer-blob" src={footerblobmobile} />
+                <img className="footer-blob" src={footerblobmobile} alt="blob" />
             )}
             <div className="footer-wrapper">
                 {/* <h1 className="major">Data Science @ GT</h1> */}
                 <div className="footer-section">
                     <h2 className="minor">Data Science @ GT</h2>
-                    <a className="mini link" href="#">
+                    <Link className="mini link" to="#">
                         About Us
-                    </a>
-                    <a className="mini link" href="#">
+                    </Link>
+                    <Link className="mini link" to="#">
                         Contact
-                    </a>
+                    </Link>
                 </div>
                 <div className="footer-section">
                     <h2 className="minor">Connect with Us</h2>
-                    <a className="mini link" href="#">
+                    <Link className="mini link" to="#">
                         Email
-                    </a>
-                    <a className="mini link" href="#">
+                    </Link>
+                    <Link className="mini link" to="#">
                         Instagram
-                    </a>
-                    <a className="mini link" href="#">
+                    </Link>
+                    <Link className="mini link" to="#">
                         LinkedIn
-                    </a>
-                    <a className="mini link" href="#">
+                    </Link>
+                    <Link className="mini link" to="#">
                         Github
-                    </a>
+                    </Link>
                 </div>
                 <div className="footer-section">
                     <h2 className="minor">Join the Community</h2>
-                    <a className="mini link" href="#">
+                    <Link className="mini link" to="#">
                         Slack
-                    </a>
-                    <a className="mini link" href="#">
+                    </Link>
+                    <Link className="mini link" to="#">
                         Discord
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="footer-section">

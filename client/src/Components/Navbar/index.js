@@ -3,6 +3,8 @@ import "./Navbar.css";
 
 import logo from "../../assets/images/dsgt/apple-touch-icon.png";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 /**
  * The navbar at the top of the page (desktop version and mobile version)
@@ -35,22 +37,22 @@ const Navbar = (params) => {
             <div {...params} className="desktop-navbar">
                 <div className="nav-wrapper">
                     <div className="nav-wrapper-flex-left">
-                        <img className="logo" src={logo} alt="DSGT Logo"/>
+                        <img className="logo" src={logo} alt="DSGT Logo" />
                         <h1 className="logo-text">DSGT</h1>
                     </div>
                     <div className="nav-wrapper-flex-right">
-                        <a className="nav-menuitem" href="#about">
+                        <HashLink className="nav-menuitem" smooth to="#about">
                             Meet The Team
-                        </a>
-                        <a className="nav-menuitem" href="#bootcamp">
+                        </HashLink>
+                        <Link className="nav-menuitem" to="#bootcamp">
                             Bootcamp
-                        </a>
-                        <a className="nav-menuitem" href="#hacklytics">
+                        </Link>
+                        <Link className="nav-menuitem" to="#hacklytics">
                             Hacklytics
-                        </a>
-                        <a className="nav-menuitem" href="#projects">
+                        </Link>
+                        <Link className="nav-menuitem" to="#projects">
                             Projects
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -62,7 +64,7 @@ const Navbar = (params) => {
             <div {...params} className="mobile-navbar">
                 <div className="nav-wrapper">
                     <div className="nav-wrapper-flex-center">
-                        <img className="logo" src={logo} alt="DSGT Logo"/>
+                        <img className="logo" src={logo} alt="DSGT Logo" />
                         <h1 className="logo-text">DSGT</h1>
                     </div>
                 </div>
@@ -77,18 +79,18 @@ const Navbar = (params) => {
                 </label>
                 <div className="mobile-navbar-menu">
                     <div className="nav-menu-flex">
-                        <a className="nav-menuitem" href="#about">
+                        <HashLink className="nav-menuitem" smooth to="#about">
                             Meet The Team
-                        </a>
-                        <a className="nav-menuitem" href="#bootcamp">
+                        </HashLink>
+                        <Link className="nav-menuitem" to="#bootcamp">
                             Bootcamp
-                        </a>
-                        <a className="nav-menuitem" href="#hacklytics">
+                        </Link>
+                        <Link className="nav-menuitem" to="#hacklytics">
                             Hacklytics
-                        </a>
-                        <a className="nav-menuitem" href="#projects">
+                        </Link>
+                        <Link className="nav-menuitem" to="#projects">
                             Projects
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
