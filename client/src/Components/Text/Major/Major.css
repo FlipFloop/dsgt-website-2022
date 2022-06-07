@@ -26,7 +26,7 @@
 }
 
 .major-text > h1 {
-  text-align: left;
+  text-align: center;
   position: relative;
   line-height: 1em;
   text-transform: uppercase;
@@ -40,6 +40,15 @@
   letter-spacing: 2px;
   -webkit-transform: scaleY(1.1);
           transform: scaleY(1.1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .major-text {
+    font-size: 12px;
+  }
+  .major-text > h1 {
+    margin: 0 10px;
+  }
 }
 
 .major-a > .line-left {

@@ -12,4 +12,10 @@
   color: #ecae58;
   text-shadow: -1px 1px 1px rgba(236, 174, 88, 0.5);
 }
+
+@media only screen and (max-width: 1000px) {
+  .minor-text {
+    margin: 0 0.75em;
+  }
+}
 /*# sourceMappingURL=Minor.css.map */

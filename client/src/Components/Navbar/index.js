@@ -18,6 +18,16 @@ const Navbar = (params) => {
         setWindowWidth(params.screen_width);
     }, [params.screen_width]);
 
+    const handleCheck = (e) => {
+        if (e.target.checked) {
+            //mobile nav menu is now open
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
+        } else {
+            //mobile nav menu is now closed
+            document.getElementsByTagName("body")[0].style.overflow = "auto";
+        }
+    };
+
     if (windowWidth >= WIDTH_THRESHOLD) {
         //desktop navbar
         //just a navbar with buttons
@@ -26,22 +36,20 @@ const Navbar = (params) => {
                 <div className="nav-wrapper">
                     <div className="nav-wrapper-flex-left">
                         <img className="logo" src={logo} />
-                        <h1 className="logo-text">
-                            DSGT
-                        </h1>
+                        <h1 className="logo-text">DSGT</h1>
                     </div>
                     <div className="nav-wrapper-flex-right">
-                        <a className="nav-menuitem" href="#projects">
-                            Projects
-                        </a>
-                        <a className="nav-menuitem" href="#hacklytics">
-                            Hacklytics
+                        <a className="nav-menuitem" href="#about">
+                            Meet The Team
                         </a>
                         <a className="nav-menuitem" href="#bootcamp">
                             Bootcamp
                         </a>
-                        <a className="nav-menuitem" href="#about">
-                            Meet The Team
+                        <a className="nav-menuitem" href="#hacklytics">
+                            Hacklytics
+                        </a>
+                        <a className="nav-menuitem" href="#projects">
+                            Projects
                         </a>
                     </div>
                 </div>
@@ -52,7 +60,37 @@ const Navbar = (params) => {
         //have a hamburger to open the mobile nav menu and close it
         return (
             <div {...params} className="mobile-navbar">
-                mobile
+                <div className="nav-wrapper">
+                    <div className="nav-wrapper-flex-center">
+                        <img className="logo" src={logo} />
+                        <h1 className="logo-text">DSGT</h1>
+                    </div>
+                </div>
+                <input
+                    id="hamburger-checkbox"
+                    type="checkbox"
+                    onChange={handleCheck}
+                ></input>
+                <label htmlFor="hamburger-checkbox" className="nav-hamburger">
+                    <div className="hamburger-line hamburger-top"></div>
+                    <div className="hamburger-line hamburger-bottom"></div>
+                </label>
+                <div className="mobile-navbar-menu">
+                    <div className="nav-menu-flex">
+                        <a className="nav-menuitem" href="#about">
+                            Meet The Team
+                        </a>
+                        <a className="nav-menuitem" href="#bootcamp">
+                            Bootcamp
+                        </a>
+                        <a className="nav-menuitem" href="#hacklytics">
+                            Hacklytics
+                        </a>
+                        <a className="nav-menuitem" href="#projects">
+                            Projects
+                        </a>
+                    </div>
+                </div>
             </div>
         );
     }

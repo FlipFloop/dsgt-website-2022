@@ -13,3 +13,10 @@
         margin: 0 auto;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .section {
+        width: calc(100% - 60px);
+        margin: 50px 30px;
+    }
+}

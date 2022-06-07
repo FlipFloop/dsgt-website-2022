@@ -38,4 +38,16 @@
   font-size: 1em;
   font-weight: normal;
 }
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    font-size: 14px;
+  }
+  .card > .card-heading {
+    margin: 6px 20px;
+  }
+  .card > .card-text {
+    margin: 0 20px;
+  }
+}
 /*# sourceMappingURL=Card.css.map */

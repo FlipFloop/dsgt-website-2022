@@ -10,7 +10,7 @@
     //border: 1px solid blue;
 
     .hero-major {
-        font-size: 4.5vw;
+        font-size: 4.5em;
         text-align: right;
         width: fit-content;
         //margin: 0 auto;
@@ -26,7 +26,7 @@
     }
 
     .hero-minor {
-        font-size: 3vw;
+        font-size: 3em;
         text-align: right;
         width: fit-content;
         //margin: 0 auto;
@@ -50,7 +50,7 @@
         padding: 10px 20px;
 
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1vw;
+        font-size: 1em;
         text-transform: uppercase;
         font-weight: 900;
         background: none;
@@ -131,5 +131,16 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #hero {
+        font-size: 10px;
+        > .hero-wrapper {
+            > .hero-right {
+                width: 100%;
+            }
+        }
     }
 }

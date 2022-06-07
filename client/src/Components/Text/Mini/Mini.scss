@@ -5,3 +5,9 @@
     line-height: auto;
     margin: 0 2.5em;
 }
+
+@media only screen and (max-width: 1000px) {
+    .mini-text {
+        margin: 0 1em;
+    }
+}

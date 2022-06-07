@@ -16,7 +16,7 @@
     }
 
     > h1 {
-        text-align: left;
+        text-align: center;
         position: relative;
         line-height: 1em;
 
@@ -29,6 +29,15 @@
         margin: 0 20px;
         letter-spacing: 2px;
         transform: scaleY(1.1);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .major-text {
+        font-size: 12px;
+        > h1 {
+            margin: 0 10px;
+        }
     }
 }
 
