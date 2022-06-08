@@ -1,9 +1,7 @@
-// 1st year
-// 2nd year
-// 3rd year
-// 4th year
-// 5th year+
-// Masters/PhD
+/**
+ * INPUT EITHER THE NUMBER OF DATA OR THE PERCENTAGE (IF PERCENTAGE, MUST ADD UP TO 100 OTHERWISE IT WILL DISPLAY AS 'X (Y%)' THINKING IT IS NUMBER)
+ */
+
 export const ClassData = {
     labels: [
         "1st year",
