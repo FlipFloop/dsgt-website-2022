@@ -211,8 +211,10 @@
             padding-top: 5em;
 
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             align-items: center;
+
+            gap: 40px;
 
             z-index: 3;
 
