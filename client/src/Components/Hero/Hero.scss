@@ -199,7 +199,7 @@ $hero-foreground-color: rgb(229, 230, 219);
                 position: relative;
                 height: 100%;
                 width: auto;
-                
+
                 float: right;
 
                 //border: 1px solid blue;
@@ -224,8 +224,13 @@ $hero-foreground-color: rgb(229, 230, 219);
             width: 100%;
         }
         > .hero-wrapper {
+            filter: invert(0.8);
             > .hero-left {
                 width: 100%;
+                padding-top: 0;
+            }
+            > .hero-right {
+                display: none;
             }
         }
     }

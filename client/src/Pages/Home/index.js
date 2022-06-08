@@ -25,6 +25,7 @@ import gtaa from "../../assets/images/logos/gtaa.png";
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
+import LearnMore from "../../Components/LearnMore";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Home = (params) => {
@@ -81,6 +82,10 @@ const Home = (params) => {
                     focused club with three main components: projects,
                     bootcamps, and Hacklytics.
                 </Mini>
+                <br />
+                <Mini>
+                    <LearnMore to="about">Meet the Team</LearnMore>
+                </Mini>
             </Section>
             <Section id="stats">
                 <Major type="b">Who We Are</Major>
@@ -102,6 +107,29 @@ const Home = (params) => {
                         </div>
                     </div>
                 </div>
+            </Section>
+            <Section id="bootcamp">
+                <Major type="a">Bootcamp</Major>
+            </Section>
+            <Section id="hacklytics">
+                <Major type="b">Hacklytics</Major>
+                <Mini>
+                    Hacklytics is Georgia Tech’s 36 hour datathon brought to you
+                    by Data Science at Georgia Tech, Georgia Tech's largest
+                    community of student data scientists! Our goal is to give
+                    students an opportunity to get hands-on experience with data
+                    science, collaborating on projects that make a real impact.
+                    As the world is becoming increasingly dependent on data, our
+                    theme for Hacklytics 2022 is "Connecting Communities". We
+                    look forward to seeing innovative projects inspired by using
+                    data as building blocks for a better world. Hacklytics 2022
+                    will be held in a hybrid format from February 18 - 20th,
+                    2022.
+                </Mini>
+                <br />
+                <Mini>
+                    <LearnMore to="https://hacklytics.io">Learn More</LearnMore>
+                </Mini>
             </Section>
             <Section id="projects">
                 <Major type="a">Projects</Major>

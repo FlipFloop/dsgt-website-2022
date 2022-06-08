@@ -242,8 +242,16 @@
   #hero > .hero-blob {
     width: 100%;
   }
+  #hero > .hero-wrapper {
+    -webkit-filter: invert(0.8);
+            filter: invert(0.8);
+  }
   #hero > .hero-wrapper > .hero-left {
     width: 100%;
+    padding-top: 0;
+  }
+  #hero > .hero-wrapper > .hero-right {
+    display: none;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

@@ -17,13 +17,12 @@
 
 @media only screen and (max-width: 1000px) {
   .major-text {
-    font-size: 12px;
-    margin: 0 10px;
+    font-size: 2em;
   }
 }
 
 .major-a {
-  color: #74b1aaff;
+  color: #74b1aa;
   text-shadow: -2px 2px 2px rgba(32, 163, 158, 0.5);
 }
 
