@@ -86,6 +86,7 @@
                 font-size: 1.3em;
                 padding: 30px 20px;
                 font-weight: 900;
+                text-align: center;
 
                 transition: all 0.3s ease;
 
@@ -274,5 +275,17 @@
     &:checked + .nav-hamburger + .mobile-navbar-menu {
         top: 0;
         height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .desktop-navbar {
+        > .nav-wrapper {
+            > .nav-wrapper-flex-right {
+                > .nav-menuitem {
+                    padding: 30px 10px;
+                }
+            }
+        }
     }
 }

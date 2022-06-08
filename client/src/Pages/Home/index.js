@@ -170,6 +170,9 @@ const Home = (params) => {
                     </Card>
                 </div>
             </Section>
+            <Section id="getinvolved">
+                <Major type="b">Get Involved</Major>
+            </Section>
             <Footer screen_width={windowWidth} />
         </div>
     );

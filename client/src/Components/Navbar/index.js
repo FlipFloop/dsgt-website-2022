@@ -60,7 +60,7 @@ const Navbar = (params) => {
                             Home
                         </Link>
                         <Link className="nav-menuitem" to="/about">
-                            Meet The Team
+                            About
                         </Link>
                         <HashLink
                             className="nav-menuitem"
@@ -82,6 +82,13 @@ const Navbar = (params) => {
                             to="/#projects"
                         >
                             Projects
+                        </HashLink>
+                        <HashLink
+                            className="nav-menuitem"
+                            smooth
+                            to="/#getinvolved"
+                        >
+                            Get Involved
                         </HashLink>
                     </div>
                 </div>
@@ -113,7 +120,7 @@ const Navbar = (params) => {
                             Home
                         </Link>
                         <Link className="nav-menuitem" to="/about">
-                            Meet The Team
+                            About
                         </Link>
                         <HashLink
                             onClick={handleClick}
@@ -138,6 +145,14 @@ const Navbar = (params) => {
                             to="/#projects"
                         >
                             Projects
+                        </HashLink>
+                        <HashLink
+                            onClick={handleClick}
+                            className="nav-menuitem"
+                            smooth
+                            to="/#getinvolved"
+                        >
+                            Get Involved
                         </HashLink>
                     </div>
                 </div>
