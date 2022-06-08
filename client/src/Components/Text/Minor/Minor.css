@@ -1,5 +1,5 @@
 .minor-text {
-  margin: 0 1.75em;
+  margin: 0;
   font-size: 1.5em;
 }
 
@@ -15,7 +15,7 @@
 
 @media only screen and (max-width: 1000px) {
   .minor-text {
-    margin: 0 0.75em;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=Minor.css.map */

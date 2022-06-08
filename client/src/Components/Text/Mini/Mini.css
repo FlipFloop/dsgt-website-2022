@@ -3,12 +3,12 @@
   font-size: 1.1em;
   font-weight: normal;
   line-height: auto;
-  margin: 0 2.5em;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1000px) {
   .mini-text {
-    margin: 0 1em;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=Mini.css.map */

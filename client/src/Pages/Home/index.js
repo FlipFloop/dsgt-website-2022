@@ -77,8 +77,7 @@ const Home = (params) => {
                     graduate students of all majors at Georgia Tech to learn
                     about and practice data science and analytics. We are a
                     focused club with three main components: projects,
-                    bootcamps, and Hacklytics. ABOUT USABOUT US DSGT 2022-2023
-                    SPONSORSHIP BROCHURE
+                    bootcamps, and Hacklytics.
                 </Mini>
             </Section>
             <Section id="stats">
