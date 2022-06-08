@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/dsgt/apple-touch-icon.png";
 
 import footerblob from "../../assets/images/blobs/footer--export.svg";
-import footerblobmobile from "../../assets/images/blobs/footer-mobile--export.svg";
+import footerblobmobile from "../../assets/images/blobs/footer-mobile2--export.svg";
 
 /**
  * The footer of the web page
