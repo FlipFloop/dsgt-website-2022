@@ -20,6 +20,11 @@ const Navbar = (params) => {
         setWindowWidth(params.screen_width);
     }, [params.screen_width]);
 
+    //handle clicking on the mobile menu
+    const handleClick = (e) => {
+        document.getElementById("hamburger-checkbox").click();
+    };
+
     const handleCheck = (e) => {
         if (e.target.checked) {
             //mobile nav menu is now open
@@ -107,6 +112,7 @@ const Navbar = (params) => {
                             Meet The Team
                         </Link>
                         <HashLink
+                            onClick={handleClick}
                             className="nav-menuitem"
                             smooth
                             to="/#bootcamp"
@@ -114,6 +120,7 @@ const Navbar = (params) => {
                             Bootcamp
                         </HashLink>
                         <HashLink
+                            onClick={handleClick}
                             className="nav-menuitem"
                             smooth
                             to="/#hacklytics"
@@ -121,6 +128,7 @@ const Navbar = (params) => {
                             Hacklytics
                         </HashLink>
                         <HashLink
+                            onClick={handleClick}
                             className="nav-menuitem"
                             smooth
                             to="/#projects"
