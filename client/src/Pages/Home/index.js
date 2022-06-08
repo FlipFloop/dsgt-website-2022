@@ -23,9 +23,13 @@ import mentra from "../../assets/images/logos/Mentra.png";
 import birdclef from "../../assets/images/logos/birdclef.png";
 import gtaa from "../../assets/images/logos/gtaa.png";
 
+import slide6 from "../../assets/images/slides/slide6.jpg";
+import slide7 from "../../assets/images/slides/slide7.jpg";
+
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 import LearnMore from "../../Components/LearnMore";
+import EventCard from "../../Components/EventCard";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Home = (params) => {
@@ -172,6 +176,28 @@ const Home = (params) => {
             </Section>
             <Section id="getinvolved">
                 <Major type="b">Get Involved</Major>
+                <Mini>Check out these opportunities to get involved:</Mini>
+                <div className="cards">
+                    <EventCard
+                        img={slide7}
+                        heading="Exec"
+                        button_text="Learn More"
+                        button_to="/about"
+                    >
+                        Join one of the many executive teams that help run DSGT!
+                    </EventCard>
+                    <EventCard
+                        img={slide6}
+                        heading="Hacklytics"
+                        when="feb 22-24 2023"
+                        button_text="Learn More"
+                        button_to="#hacklytics"
+                    >
+                        Hacklytics is Georgia Tech’s 36 hour datathon brought to
+                        you by Data Science at Georgia Tech, Georgia Tech's
+                        largest community of student data scientists!
+                    </EventCard>
+                </div>
             </Section>
             <Footer screen_width={windowWidth} />
         </div>
