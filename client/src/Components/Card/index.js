@@ -1,6 +1,11 @@
 //imports
 import "./Card.css";
 
+/**
+ * a card with an image (params.img), heading (params.heading), and a description (inside the tag <Card>text description</Card>)
+ * @param {*} params 
+ * @returns 
+ */
 const Card = (params) => {
     return (
         <div className="card">

@@ -3,6 +3,7 @@ import "./Hero.css";
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import hero3 from "../../assets/images/blobs/hero3--export.svg";
 import hero2mobile from "../../assets/images/blobs/hero2-mobile--export.svg";
@@ -40,9 +41,9 @@ const Hero = (params) => {
                     {/* <h1 className="hero-minor">Georgia Tech's largest data science organization</h1> */}
                     <div className="hero-sep"></div>
                     {/* <button type="button" className="apply-button">Apply</button> */}
-                    <Link className="learn-more" to="/about">
+                    <HashLink className="learn-more" smooth to="#about">
                         Learn More<span className="arrow">→</span>
-                    </Link>
+                    </HashLink>
                 </div>
                 <div className="hero-right">
                     <img className="hero-logo" src={herologo} alt="DSGT logo" />

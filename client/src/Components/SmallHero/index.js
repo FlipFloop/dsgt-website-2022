@@ -3,6 +3,11 @@ import "./SmallHero.css";
 
 import smallblob from "../../assets/images/blobs/small-blob--export.svg";
 
+/**
+ * the landind hero in small scale for sub pages, has title (params.title) and a description (params.desc || params.description)
+ * @param {*} params
+ * @returns
+ */
 const SmallHero = (params) => {
     return (
         <div {...params} className="small-hero">
