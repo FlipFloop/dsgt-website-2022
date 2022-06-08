@@ -10,6 +10,34 @@
 }
 
 #stats {
+    .charts-flex {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: fit-content;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        margin: 10px 0;
+
+        //border: 1px dashed red;
+
+        > .chart-card {
+            display: flex;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            //border: 1px solid black;
+        }
+    }
     .pie-chart {
         display: block;
         position: relative;

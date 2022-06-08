@@ -42,19 +42,20 @@ const Home = (params) => {
         plugins: {
             tooltip: {
                 callbacks: {
-                    label: function(context) {
+                    label: function (context) {
                         let sum = 0;
-                        for(var x of context.dataset.data) {
+                        for (var x of context.dataset.data) {
                             sum += x;
                         }
-                        let percent = Math.round(context.parsed * 1000 / sum) / 10;
+                        let percent =
+                            Math.round((context.parsed * 1000) / sum) / 10;
                         if (context.parsed !== percent) {
-                            return ` ${context.label}: ${context.parsed} (${percent}%)`
+                            return ` ${context.label}: ${context.parsed} (${percent}%)`;
                         }
                         return ` ${context.label}: ${context.parsed}%`;
-                    }
-                }
-            }
+                    },
+                },
+            },
         },
         color: "#fff",
     };
@@ -86,14 +87,19 @@ const Home = (params) => {
                     In the spring 2022 semester, we had 167 dedicated DSGT
                     members. Here's how we look like:
                 </Mini>
-                <Minor>CLASS DEMOGRAPHICS</Minor>
-                <div className="pie-chart">
-                    <Pie data={ClassData} options={chartOptions} />
-                </div>
-
-                <Minor type="b">MAJOR DEMOGRAPHICS</Minor>
-                <div className="pie-chart">
-                    <Pie data={MajorData} options={chartOptions} />
+                <div className="charts-flex">
+                    <div className="chart-card">
+                        <Minor>CLASS DEMOGRAPHICS</Minor>
+                        <div className="pie-chart">
+                            <Pie data={ClassData} options={chartOptions} />
+                        </div>
+                    </div>
+                    <div className="chart-card">
+                        <Minor type="b">MAJOR DEMOGRAPHICS</Minor>
+                        <div className="pie-chart">
+                            <Pie data={MajorData} options={chartOptions} />
+                        </div>
+                    </div>
                 </div>
             </Section>
             <Section id="projects">
