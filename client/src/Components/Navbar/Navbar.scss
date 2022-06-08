@@ -58,6 +58,10 @@
                 text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.425);
                 //padding: 0.3em 0;
             }
+            > .color {
+                color: rgba(32, 163, 159, 1);
+                text-shadow: -2px 2px 2px rgba(32, 163, 159, 0.425);
+            }
         }
         > .nav-wrapper-flex-right {
             display: flex;

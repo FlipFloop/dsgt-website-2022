@@ -68,6 +68,11 @@
   text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.425);
 }
 
+.desktop-navbar .nav-wrapper > .nav-wrapper-flex-left > .color {
+  color: #20a39f;
+  text-shadow: -2px 2px 2px rgba(32, 163, 159, 0.425);
+}
+
 .desktop-navbar .nav-wrapper > .nav-wrapper-flex-right {
   display: -webkit-box;
   display: -ms-flexbox;

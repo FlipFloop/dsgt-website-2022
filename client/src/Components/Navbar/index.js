@@ -38,24 +38,42 @@ const Navbar = (params) => {
                 <div className="nav-wrapper">
                     <div className="nav-wrapper-flex-left">
                         <img className="logo" src={logo} alt="DSGT Logo" />
-                        <h1 className="logo-text">DSGT</h1>
+                        <h1
+                            className={`logo-text ${
+                                params.page === "home" ? "color" : ""
+                            }`}
+                        >
+                            DSGT
+                        </h1>
                     </div>
                     <div className="nav-wrapper-flex-right">
                         <Link className="nav-menuitem" to="/">
                             Home
                         </Link>
-                        <HashLink className="nav-menuitem" smooth to="#about">
+                        <Link className="nav-menuitem" to="/about">
                             Meet The Team
-                        </HashLink>
-                        <Link className="nav-menuitem" to="#bootcamp">
+                        </Link>
+                        <HashLink
+                            className="nav-menuitem"
+                            smooth
+                            to="/#bootcamp"
+                        >
                             Bootcamp
-                        </Link>
-                        <Link className="nav-menuitem" to="#hacklytics">
+                        </HashLink>
+                        <HashLink
+                            className="nav-menuitem"
+                            smooth
+                            to="/#hacklytics"
+                        >
                             Hacklytics
-                        </Link>
-                        <Link className="nav-menuitem" to="#projects">
+                        </HashLink>
+                        <HashLink
+                            className="nav-menuitem"
+                            smooth
+                            to="/#projects"
+                        >
                             Projects
-                        </Link>
+                        </HashLink>
                     </div>
                 </div>
             </div>
@@ -85,18 +103,30 @@ const Navbar = (params) => {
                         <Link className="nav-menuitem" to="/">
                             Home
                         </Link>
-                        <HashLink className="nav-menuitem" smooth to="#about">
+                        <Link className="nav-menuitem" to="/about">
                             Meet The Team
-                        </HashLink>
-                        <Link className="nav-menuitem" to="#bootcamp">
+                        </Link>
+                        <HashLink
+                            className="nav-menuitem"
+                            smooth
+                            to="/#bootcamp"
+                        >
                             Bootcamp
-                        </Link>
-                        <Link className="nav-menuitem" to="#hacklytics">
+                        </HashLink>
+                        <HashLink
+                            className="nav-menuitem"
+                            smooth
+                            to="/#hacklytics"
+                        >
                             Hacklytics
-                        </Link>
-                        <Link className="nav-menuitem" to="#projects">
+                        </HashLink>
+                        <HashLink
+                            className="nav-menuitem"
+                            smooth
+                            to="/#projects"
+                        >
                             Projects
-                        </Link>
+                        </HashLink>
                     </div>
                 </div>
             </div>

@@ -67,7 +67,7 @@ const Home = (params) => {
         <div {...params} id="home-page">
             <Background />
             {/* load the navbar */}
-            <Navbar screen_width={windowWidth} />
+            <Navbar screen_width={windowWidth} page="home" />
             <Hero screen_width={windowWidth} />
             <Section id="about">
                 <Major type="a">About Us</Major>
