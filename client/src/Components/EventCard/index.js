@@ -13,7 +13,7 @@ const EventCard = (params) => {
         <div className="event-card">
             {params.img ? (
                 <div className="card-img">
-                    <img src={params.img} alt="event image" />
+                    <img src={params.img} alt="event" />
                 </div>
             ) : (
                 ""
