@@ -28,7 +28,7 @@ const About = (params) => {
             <Navbar screen_width={windowWidth} />
             <SmallHero
                 title="Meet The Team"
-                desc="The people that make DSGT what it is"
+                desc="The people who make DSGT what it is"
             />
             <Section id="teams">
                 <div className="teams-flex">

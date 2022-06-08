@@ -47,7 +47,7 @@
   display: block;
   position: relative;
   float: left;
-  height: 5em;
+  height: 4em;
   margin: 0 20px;
 }
 
@@ -64,8 +64,8 @@
   height: fit-content;
   margin: 0;
   float: left;
-  color: #20a39f;
-  text-shadow: -2px 2px 2px rgba(32, 163, 159, 0.425);
+  color: black;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.425);
 }
 
 .desktop-navbar .nav-wrapper > .nav-wrapper-flex-right {
@@ -159,7 +159,7 @@
 .mobile-navbar > .nav-wrapper > .nav-wrapper-flex-center > .logo {
   display: block;
   position: relative;
-  height: 100%;
+  height: 4em;
   width: auto;
   margin: 0 5px;
 }
@@ -177,8 +177,8 @@
   height: fit-content;
   margin: 0 5px;
   float: left;
-  color: #20a39f;
-  text-shadow: -2px 2px 2px rgba(32, 163, 159, 0.425);
+  color: black;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.425);
 }
 
 .mobile-navbar > .nav-hamburger {

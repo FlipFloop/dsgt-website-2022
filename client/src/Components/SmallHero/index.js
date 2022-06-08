@@ -1,7 +1,7 @@
 //imports
 import "./SmallHero.css";
 
-import smallblob from "../../assets/images/blobs/small-blob--export.svg";
+import smallblob from "../../assets/images/blobs/small-header--export.svg";
 
 /**
  * the landind hero in small scale for sub pages, has title (params.title) and a description (params.desc || params.description)
