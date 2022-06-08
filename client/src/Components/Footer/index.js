@@ -4,6 +4,8 @@ import "./Footer.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import logo from "../../assets/images/dsgt/apple-touch-icon.png";
+
 import footerblob from "../../assets/images/blobs/footer--export.svg";
 import footerblobmobile from "../../assets/images/blobs/footer-mobile--export.svg";
 
@@ -26,13 +28,20 @@ const Footer = (params) => {
             {windowWidth >= WIDTH_THRESHOLD ? (
                 <img className="footer-blob" src={footerblob} alt="blob" />
             ) : (
-                <img className="footer-blob" src={footerblobmobile} alt="blob" />
+                <img
+                    className="footer-blob"
+                    src={footerblobmobile}
+                    alt="blob"
+                />
             )}
             <div className="footer-wrapper">
-                {/* <h1 className="major">Data Science @ GT</h1> */}
+                <div className="major">
+                    <img src={logo} className="logo" alt="logo" />
+                    <h1>Data Science @ GT</h1>
+                </div>
                 <div className="footer-section">
-                    <h2 className="minor">Data Science @ GT</h2>
-                    <Link className="mini link" to="#">
+                    <h2 className="minor">Company</h2>
+                    <Link className="mini link" to="/about">
                         About Us
                     </Link>
                     <Link className="mini link" to="#">
