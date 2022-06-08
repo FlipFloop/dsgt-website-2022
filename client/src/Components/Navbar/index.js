@@ -25,6 +25,10 @@ const Navbar = (params) => {
         document.getElementById("hamburger-checkbox").click();
     };
 
+    // const handleClickAll = (e) => {
+    //     document.getElementsByTagName("body")[0].style.overflow = "auto";
+    // };
+
     const handleCheck = (e) => {
         if (e.target.checked) {
             //mobile nav menu is now open

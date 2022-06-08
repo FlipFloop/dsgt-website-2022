@@ -15,6 +15,9 @@ const About = (params) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
+        //show all page
+        document.getElementsByTagName("body")[0].style.overflow = "auto";
+
         //handle the resizing of the window to render desktop vs mobile elements
         function handleResize(e) {
             setWindowWidth(window.innerWidth);
