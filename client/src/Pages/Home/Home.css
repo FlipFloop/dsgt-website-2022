@@ -1,4 +1,4 @@
-.cards {
+#projects .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +19,8 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 20px;
 }
 
 #stats .charts-flex {

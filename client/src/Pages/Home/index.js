@@ -20,6 +20,8 @@ import { ClassData, MajorData } from "../../assets/Data/demographics";
 //import images
 import storm from "../../assets/images/logos/storm.png";
 import mentra from "../../assets/images/logos/Mentra.png";
+import birdclef from "../../assets/images/logos/birdclef.png";
+import gtaa from "../../assets/images/logos/gtaa.png";
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
@@ -124,13 +126,13 @@ const Home = (params) => {
                         named the Grand Prize Winner by the Biden
                         Administration.
                     </Card>
-                    <Card img={mentra} heading="Kaggle birdCLEF">
+                    <Card img={birdclef} heading="Kaggle birdCLEF">
                         A data science competition hosted on Kaggle, birdCLEF
                         focuses on developing machine learning algorithms to
                         identify avian vocalizations in continuous soundscape
                         data to aid conservation efforts.
                     </Card>
-                    <Card img={mentra} heading="GT Athletics">
+                    <Card img={gtaa} heading="GT Athletics">
                         We are analyzing basketball data to help GT Athletics
                         maximize their chances of winning by finding optimal
                         non-conference opponents.
