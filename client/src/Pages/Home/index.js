@@ -23,6 +23,7 @@ import mentra from "../../assets/images/logos/Mentra.png";
 import birdclef from "../../assets/images/logos/birdclef.png";
 import gtaa from "../../assets/images/logos/gtaa.png";
 
+import slide1 from "../../assets/images/slides/slide1.jpg";
 import slide6 from "../../assets/images/slides/slide6.jpg";
 import slide7 from "../../assets/images/slides/slide7.jpg";
 
@@ -100,6 +101,7 @@ const Home = (params) => {
                     In the spring 2022 semester, we had 167 dedicated DSGT
                     members. Here's how we look like:
                 </Mini>
+                <br></br>
                 <div className="charts-flex">
                     <div className="chart-card">
                         <Minor>CLASS DEMOGRAPHICS</Minor>
@@ -117,6 +119,20 @@ const Home = (params) => {
             </Section>
             <Section id="bootcamp">
                 <Major type="a">Bootcamp</Major>
+                <Mini>
+                    We teach our members core data science skills through a
+                    bootcamp that takes our members on a start-to-finish
+                    journey, touching on essentials such as cleaning data to
+                    more advanced concepts, such as feature engineering.
+                    Workshops are project-based and all members leave bootcamp
+                    with a fully polished, professional data science project.
+                </Mini>
+                <br />
+                <Mini>
+                    <LearnMore to="https://dsgtbootcamp.netlify.app/">
+                        Learn more at our Bootcamp site
+                    </LearnMore>
+                </Mini>
             </Section>
             <Section id="hacklytics">
                 <Major type="b">Hacklytics</Major>
@@ -135,7 +151,9 @@ const Home = (params) => {
                 </Mini>
                 <br />
                 <Mini>
-                    <LearnMore to="https://hacklytics.io">Learn More</LearnMore>
+                    <LearnMore to="https://hacklytics.io">
+                        Learn more about the upcoming Hacklytics 2023
+                    </LearnMore>
                 </Mini>
             </Section>
             <Section id="projects">
@@ -179,10 +197,18 @@ const Home = (params) => {
                 <Mini>Check out these opportunities to get involved:</Mini>
                 <div className="cards">
                     <EventCard
-                        img={slide7}
-                        heading="Exec"
+                        img={slide1}
+                        heading="Join DSGT"
                         button_text="Learn More"
-                        button_to="/about"
+                        button_to="#"
+                    >
+                        Take part in the largest data science organization at Georgia Tech!
+                    </EventCard>
+                    <EventCard
+                        img={slide7}
+                        heading="Apply for Leadership Positions"
+                        button_text="Learn More"
+                        button_to="#"
                     >
                         Join one of the many executive teams that help run DSGT!
                     </EventCard>

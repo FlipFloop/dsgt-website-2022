@@ -3,7 +3,6 @@ import "./Navbar.css";
 
 import logo from "../../assets/images/dsgt/apple-touch-icon.png";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 /**
@@ -56,12 +55,12 @@ const Navbar = (params) => {
                         </h1>
                     </div>
                     <div className="nav-wrapper-flex-right">
-                        <Link className="nav-menuitem" to="/">
+                        <HashLink className="nav-menuitem" smooth to="/">
                             Home
-                        </Link>
-                        <Link className="nav-menuitem" to="/about">
+                        </HashLink>
+                        <HashLink className="nav-menuitem" smooth to="#about">
                             About
-                        </Link>
+                        </HashLink>
                         <HashLink
                             className="nav-menuitem"
                             smooth
@@ -116,12 +115,17 @@ const Navbar = (params) => {
                 </label>
                 <div className="mobile-navbar-menu">
                     <div className="nav-menu-flex">
-                        <Link className="nav-menuitem" to="/">
+                        <HashLink className="nav-menuitem" smooth to="/">
                             Home
-                        </Link>
-                        <Link className="nav-menuitem" to="/about">
+                        </HashLink>
+                        <HashLink
+                            onClick={handleClick}
+                            className="nav-menuitem"
+                            smooth
+                            to="#about"
+                        >
                             About
-                        </Link>
+                        </HashLink>
                         <HashLink
                             onClick={handleClick}
                             className="nav-menuitem"

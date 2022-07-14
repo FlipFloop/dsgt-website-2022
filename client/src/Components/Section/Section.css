@@ -5,7 +5,8 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 50px 50px;
+  margin: 0px 50px;
+  padding: 100px 0;
 }
 
 .section > .section-wrapper {
@@ -15,7 +16,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
