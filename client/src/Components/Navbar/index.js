@@ -89,6 +89,12 @@ const Navbar = (params) => {
                         >
                             Get Involved
                         </HashLink>
+                        <a
+                            className="nav-menuitem"
+                            href="https://member.datasciencegt.org"
+                        >
+                            Sign In
+                        </a>
                     </div>
                 </div>
             </div>
@@ -158,6 +164,12 @@ const Navbar = (params) => {
                         >
                             Get Involved
                         </HashLink>
+                        <a
+                            className="nav-menuitem"
+                            href="https://member.datasciencegt.org"
+                        >
+                            Sign In
+                        </a>
                     </div>
                 </div>
             </div>
