@@ -26,6 +26,7 @@ import gtaa from "../../assets/images/logos/gtaa.png";
 import slide1 from "../../assets/images/slides/slide1.jpg";
 import slide6 from "../../assets/images/slides/slide6.jpg";
 import slide7 from "../../assets/images/slides/slide7.jpg";
+import slide8 from "../../assets/images/slides/slide8.jpg";
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
@@ -118,43 +119,68 @@ const Home = (params) => {
                 </div>
             </Section>
             <Section id="bootcamp">
-                <Major type="a">Bootcamp</Major>
-                <Mini>
-                    We teach our members core data science skills through a
-                    bootcamp that takes our members on a start-to-finish
-                    journey, touching on essentials such as cleaning data to
-                    more advanced concepts, such as feature engineering.
-                    Workshops are project-based and all members leave bootcamp
-                    with a fully polished, professional data science project.
-                </Mini>
-                <br />
-                <Mini>
-                    <LearnMore to="https://dsgtbootcamp.netlify.app/">
-                        Learn more at our Bootcamp site
-                    </LearnMore>
-                </Mini>
+                <div className="FlexRow" style={{flexWrap: "wrap-reverse"}}>
+                    <div className="SectionHalf">
+                        <Major type="a">Bootcamp</Major>
+                        <Mini>
+                            We teach our members core data science skills
+                            through a bootcamp that takes our members on a
+                            start-to-finish journey, touching on essentials such
+                            as cleaning data to more advanced concepts, such as
+                            feature engineering. Workshops are project-based and
+                            all members leave bootcamp with a fully polished,
+                            professional data science project.
+                        </Mini>
+                        <br />
+                        <Mini>
+                            <LearnMore to="https://dsgtbootcamp.netlify.app/">
+                                Learn more at our Bootcamp site
+                            </LearnMore>
+                        </Mini>
+                    </div>
+                    <div className="SectionHalf">
+                        <img
+                            className="SectionImage"
+                            src={slide8}
+                            alt="Hacklytics"
+                        />
+                    </div>
+                </div>
             </Section>
             <Section id="hacklytics">
-                <Major type="b">Hacklytics</Major>
-                <Mini>
-                    Hacklytics is Georgia Tech’s 36 hour datathon brought to you
-                    by Data Science at Georgia Tech, Georgia Tech's largest
-                    community of student data scientists! Our goal is to give
-                    students an opportunity to get hands-on experience with data
-                    science, collaborating on projects that make a real impact.
-                    As the world is becoming increasingly dependent on data, our
-                    theme for Hacklytics 2022 is "Connecting Communities". We
-                    look forward to seeing innovative projects inspired by using
-                    data as building blocks for a better world. Hacklytics 2022
-                    will be held in a hybrid format from February 18 - 20th,
-                    2022.
-                </Mini>
-                <br />
-                <Mini>
-                    <LearnMore to="https://hacklytics.io">
-                        Learn more about the upcoming Hacklytics 2023
-                    </LearnMore>
-                </Mini>
+                <div className="FlexRow">
+                    <div className="SectionHalf">
+                        <img
+                            className="SectionImage"
+                            src={slide6}
+                            alt="Hacklytics"
+                        />
+                    </div>
+                    <div className="SectionHalf">
+                        <Major type="b">Hacklytics</Major>
+                        <Mini>
+                            Hacklytics is Georgia Tech’s 36 hour datathon
+                            brought to you by Data Science at Georgia Tech,
+                            Georgia Tech's largest community of student data
+                            scientists! Our goal is to give students an
+                            opportunity to get hands-on experience with data
+                            science, collaborating on projects that make a real
+                            impact. As the world is becoming increasingly
+                            dependent on data, our theme for Hacklytics 2022 is
+                            "Connecting Communities". We look forward to seeing
+                            innovative projects inspired by using data as
+                            building blocks for a better world. Hacklytics 2022
+                            will be held in a hybrid format from February 18 -
+                            20th, 2022.
+                        </Mini>
+                        <br />
+                        <Mini>
+                            <LearnMore to="https://hacklytics.io">
+                                Learn more about the upcoming Hacklytics 2023
+                            </LearnMore>
+                        </Mini>
+                    </div>
+                </div>
             </Section>
             <Section id="projects">
                 <Major type="a">Projects</Major>
@@ -202,7 +228,8 @@ const Home = (params) => {
                         button_text="Learn More"
                         button_to="#"
                     >
-                        Take part in the largest data science organization at Georgia Tech!
+                        Take part in the largest data science organization at
+                        Georgia Tech!
                     </EventCard>
                     <EventCard
                         img={slide7}
