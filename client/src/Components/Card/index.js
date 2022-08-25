@@ -1,5 +1,5 @@
 //imports
-import "./Card.css";
+import styles from "./Card.module.scss";
 
 /**
  * a card with an image (params.img), heading (params.heading), and a description (inside the tag <Card>text description</Card>)
@@ -8,20 +8,20 @@ import "./Card.css";
  */
 const Card = (params) => {
     return (
-        <div className="card">
+        <div className={styles.Card}>
             {params.img ? (
-                <div className="card-img">
+                <div className={styles.CardImg}>
                     <img src={params.img} alt="project logo" />
                 </div>
             ) : (
                 ""
             )}
             {params.heading ? (
-                <h1 className="card-heading">{params.heading}</h1>
+                <h1 className={styles.CardHeading}>{params.heading}</h1>
             ) : (
                 ""
             )}
-            <p className="card-text">{params.children}</p>
+            <p className={styles.CardText}>{params.children}</p>
         </div>
     );
 };
