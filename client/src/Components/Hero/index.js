@@ -1,8 +1,8 @@
 //imports
-import "./Hero.css";
+import styles from "./Hero.module.scss";
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import hero3 from "../../assets/images/blobs/hero3--export.svg";
@@ -25,28 +25,32 @@ const Hero = (params) => {
 
     //take into account the page width
     return (
-        <div {...params} id="hero">
+        <div {...params} id="hero" className={styles.hero}>
             {windowWidth >= WIDTH_THRESHOLD ? (
-                <img className="hero-blob" src={hero3} alt="blob" />
+                <img className={styles.HeroBlob} src={hero3} alt="blob" />
             ) : (
-                <img className="hero-blob" src={hero2mobile} alt="blob" />
+                <img className={styles.HeroBlob} src={hero2mobile} alt="blob" />
             )}
-            <div className="hero-wrapper">
-                <div className="hero-left">
+            <div className={styles.HeroWrapper}>
+                <div className={styles.HeroLeft}>
                     {/* <img className="hero-logo" src={herologo} /> */}
-                    <h1 className="hero-major">
+                    <h1 className={styles.HeroMajor}>
                         Data Science
                         <br />@ Georgia Tech
                     </h1>
                     {/* <h1 className="hero-minor">Georgia Tech's largest data science organization</h1> */}
-                    <div className="hero-sep"></div>
+                    <div className={styles.HeroSep}></div>
                     {/* <button type="button" className="apply-button">Apply</button> */}
-                    <HashLink className="learn-more" smooth to="#about">
-                        Learn More<span className="arrow">→</span>
+                    <HashLink className={styles.LearnMore} smooth to="#about">
+                        Learn More<span className={styles.arrow}>→</span>
                     </HashLink>
                 </div>
-                <div className="hero-right">
-                    <img className="hero-logo" src={herologo} alt="DSGT logo" />
+                <div className={styles.HeroRight}>
+                    <img
+                        className={styles.HeroLogo}
+                        src={herologo}
+                        alt="DSGT logo"
+                    />
                 </div>
             </div>
         </div>

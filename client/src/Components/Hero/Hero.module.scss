@@ -1,6 +1,6 @@
 $hero-foreground-color: rgb(229, 230, 219);
 
-#hero {
+.hero {
     display: block;
     position: relative;
     width: 100%;
@@ -16,7 +16,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         text-decoration: none;
     }
 
-    .hero-sep {
+    .HeroSep {
         display: block;
         position: relative;
         width: 8em;
@@ -50,7 +50,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         }
     }
 
-    .hero-major {
+    .HeroMajor {
         font-size: 4.5em;
         text-align: left;
         width: fit-content;
@@ -66,7 +66,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         text-transform: uppercase;
     }
 
-    .hero-minor {
+    .HeroMinor {
         font-size: 3em;
         text-align: right;
         width: fit-content;
@@ -82,7 +82,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         padding: 10px 0;
     }
 
-    .learn-more {
+    .LearnMore {
         display: block;
         position: relative;
         font-weight: 600;
@@ -107,7 +107,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         }
     }
 
-    .apply-button {
+    .ApplyButton {
         display: block;
         position: relative;
         width: fit-content;
@@ -138,7 +138,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         }
     }
 
-    > .hero-blob {
+    > .HeroBlob {
         display: block;
         position: absolute;
         z-index: -1;
@@ -147,7 +147,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         top: 0;
         right: 0;
     }
-    > .hero-wrapper {
+    > .HeroWrapper {
         display: block;
         position: relative;
         height: calc(100vh);
@@ -158,7 +158,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         padding-top: 6em;
 
         //border: 1px solid green;
-        > .hero-img-test {
+        > .HeroImgTest {
             display: block;
             position: absolute;
             width: 40%;
@@ -168,7 +168,7 @@ $hero-foreground-color: rgb(229, 230, 219);
             top: 6em;
         }
 
-        > .hero-left {
+        > .HeroLeft {
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -184,7 +184,7 @@ $hero-foreground-color: rgb(229, 230, 219);
 
             //border: 1px solid blue;
         }
-        > .hero-right {
+        > .HeroRight {
             display: block;
             position: relative;
             //centered height
@@ -194,7 +194,7 @@ $hero-foreground-color: rgb(229, 230, 219);
             overflow: hidden;
 
             //border: 1px solid red;
-            > .hero-logo {
+            > .HeroLogo {
                 display: block;
                 position: relative;
                 height: 100%;
@@ -218,18 +218,18 @@ $hero-foreground-color: rgb(229, 230, 219);
 }
 
 @media only screen and (max-width: 1000px) {
-    #hero {
+    .hero {
         font-size: 10px;
-        > .hero-blob {
+        > .HeroBlob {
             width: 100%;
         }
-        > .hero-wrapper {
+        > .HeroWrapper {
             filter: invert(0.8);
-            > .hero-left {
+            > .HeroLeft {
                 width: 100%;
                 padding-top: 0;
             }
-            > .hero-right {
+            > .HeroRight {
                 display: none;
             }
         }
