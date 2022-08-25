@@ -1,4 +1,4 @@
-.wavy-bg {
+.WavyBg {
     display: block;
     position: absolute;
     top: 0;
@@ -6,11 +6,11 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-color: #31323B;
+    background-color: #31323b;
 
     //animation: fade-in 1s;
 
-    > .bg-nav {
+    > .BgNav {
         display: none;
         position: absolute;
         width: 100%;
@@ -21,7 +21,7 @@
         box-shadow: 0px 0px 5px 5px rgba($color: #000000, $alpha: 0.1);
         z-index: 0;
     }
-    > .squiggles {
+    > .Squiggles {
         display: none;
         position: absolute;
         z-index: -1;

@@ -1,5 +1,5 @@
 //imports
-import "./Background.css";
+import styles from "./Background.module.scss";
 
 /**
  * The background for the page (squiggles on gray background)
@@ -8,9 +8,9 @@ import "./Background.css";
  */
 const Background = (params) => {
     return (
-        <div {...params} className="wavy-bg">
-            <div className="bg-nav"></div>
-            <div className="squiggles"></div>
+        <div {...params} className={styles.WavyBg}>
+            <div className={styles.BgNav}></div>
+            <div className={styles.Squiggles}></div>
         </div>
     );
 };
