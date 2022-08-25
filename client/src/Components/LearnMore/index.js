@@ -1,5 +1,5 @@
 //imports
-import "./LearnMore.css";
+import styles from "./LearnMore.module.scss";
 
 import { Link } from "react-router-dom";
 
@@ -12,16 +12,16 @@ import { Link } from "react-router-dom";
 const LearnMore = (params) => {
     if (params.to && params.to.includes("http")) {
         return (
-            <a className="learn-more" href={params.to || "#"}>
+            <a className={styles.LearnMore} href={params.to || "#"}>
                 {params.children}
-                <span className="arrow">→</span>
+                <span className={styles.arrow}>→</span>
             </a>
         );
     } else {
         return (
-            <Link className="learn-more" to={params.to || "#"}>
+            <Link className={styles.LearnMore} to={params.to || "#"}>
                 {params.children}
-                <span className="arrow">→</span>
+                <span className={styles.arrow}>→</span>
             </Link>
         );
     }
