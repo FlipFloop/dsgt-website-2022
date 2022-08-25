@@ -1,4 +1,4 @@
-.footer {
+.Footer {
     display: flex;
     position: relative;
     height: fit-content;
@@ -10,7 +10,7 @@
     //border: 1px dashed blue;
     padding-top: 80px;
 
-    > .footer-blob {
+    > .FooterBlob {
         display: block;
         position: absolute;
         width: 100%;
@@ -19,7 +19,7 @@
         left: 0;
     }
 
-    > .footer-wrapper {
+    > .FooterWrapper {
         display: flex;
         position: relative;
         width: 100%;
@@ -33,7 +33,7 @@
         margin: 30px auto;
         //border: 1px dashed green;
 
-        .major {
+        .Major {
             display: flex;
             position: relative;
             width: fit-content;
@@ -58,7 +58,7 @@
                 width: auto;
             }
         }
-        .footer-section {
+        .FooterSection {
             display: flex;
             position: relative;
             height: fit-content;

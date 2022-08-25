@@ -1,5 +1,5 @@
 //imports
-import "./Footer.css";
+import styles from "./Footer.module.scss";
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -24,57 +24,64 @@ const Footer = (params) => {
     }, [params.screen_width]);
 
     return (
-        <div className="footer">
+        <div className={styles.Footer}>
             {windowWidth >= WIDTH_THRESHOLD ? (
-                <img className="footer-blob" src={footerblob} alt="blob" />
+                <img
+                    className={styles.FooterBlob}
+                    src={footerblob}
+                    alt="blob"
+                />
             ) : (
                 <img
-                    className="footer-blob"
+                    className={styles.FooterBlob}
                     src={footerblobmobile}
                     alt="blob"
                 />
             )}
-            <div className="footer-wrapper">
-                <div className="major">
-                    <img src={logo} className="logo" alt="logo" />
+            <div className={styles.FooterWrapper}>
+                <div className={styles.Major}>
+                    <img src={logo} className={styles.logo} alt="logo" />
                     <h1>Data Science @ GT</h1>
                 </div>
-                <div className="footer-section">
-                    <h2 className="minor">Company</h2>
-                    <Link className="mini link" to="/about">
+                <div className={styles.FooterSection}>
+                    <h2 className={styles.minor}>Company</h2>
+                    <Link
+                        className={`${styles.mini} ${styles.link}`}
+                        to="/about"
+                    >
                         About Us
                     </Link>
-                    <Link className="mini link" to="#">
+                    <Link className={`${styles.mini} ${styles.link}`} to="#">
                         Contact
                     </Link>
                 </div>
-                <div className="footer-section">
-                    <h2 className="minor">Connect with Us</h2>
-                    <Link className="mini link" to="#">
+                <div className={styles.FooterSection}>
+                    <h2 className={styles.minor}>Connect with Us</h2>
+                    <Link className={`${styles.mini} ${styles.link}`} to="#">
                         Email
                     </Link>
-                    <Link className="mini link" to="#">
+                    <Link className={`${styles.mini} ${styles.link}`} to="#">
                         Instagram
                     </Link>
-                    <Link className="mini link" to="#">
+                    <Link className={`${styles.mini} ${styles.link}`} to="#">
                         LinkedIn
                     </Link>
-                    <Link className="mini link" to="#">
+                    <Link className={`${styles.mini} ${styles.link}`} to="#">
                         Github
                     </Link>
                 </div>
-                <div className="footer-section">
-                    <h2 className="minor">Join the Community</h2>
-                    <Link className="mini link" to="#">
+                <div className={styles.FooterSection}>
+                    <h2 className={styles.minor}>Join the Community</h2>
+                    <Link className={`${styles.mini} ${styles.link}`} to="#">
                         Slack
                     </Link>
-                    <Link className="mini link" to="#">
+                    <Link className={`${styles.mini} ${styles.link}`} to="#">
                         Discord
                     </Link>
                 </div>
 
-                <div className="footer-section">
-                    <h2 className="minor">
+                <div className={styles.FooterSection}>
+                    <h2 className={styles.minor}>
                         Made with 💖 by the DSGT Tech Team.
                     </h2>
                 </div>
