@@ -1,4 +1,4 @@
-.event-card {
+.EventCard {
     display: block;
     position: relative;
     width: 22em;
@@ -15,7 +15,7 @@
         transform: translateY(-4px);
     }
 
-    > .card-img {
+    > .CardImg {
         display: flex;
         position: relative;
         height: 45%;
@@ -37,7 +37,7 @@
             //border: 1px solid red;
         }
     }
-    > .card-wrapper {
+    > .CardWrapper {
         display: flex;
         position: relative;
         width: 100%;
@@ -50,20 +50,20 @@
         align-items: flex-start;
         gap: 6px;
 
-        > .card-heading {
+        > .CardHeading {
             font-size: 1.4em;
             line-height: 1em;
             color: rgb(32, 163, 158);
             text-shadow: -1px 1px 1px rgba(37, 139, 136, 0.562);
         }
-        > .card-datetime {
+        > .CardDatetime {
             color: rgb(118, 118, 118);
             font-size: 0.85em;
             font-weight: 400;
             line-height: 6px;
             text-transform: capitalize;
         }
-        > .card-text {
+        > .CardText {
             font-size: 1em;
             font-weight: normal;
             height: fit-content;
@@ -71,7 +71,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        > .card-button {
+        > .CardButton {
             display: block;
             position: relative;
             width: 100%;
@@ -101,9 +101,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .event-card {
+    .EventCard {
         font-size: 14px;
-        > .card-wrapper {
+        > .CardWrapper {
             padding: 12px 20px;
         }
         // > .card-heading {

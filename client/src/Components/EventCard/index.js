@@ -1,5 +1,5 @@
 //imports
-import "./EventCard.css";
+import styles from "./EventCard.module.scss";
 
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -10,24 +10,28 @@ import { HashLink as Link } from "react-router-hash-link";
  */
 const EventCard = (params) => {
     return (
-        <div className="event-card">
+        <div className={styles.EventCard}>
             {params.img ? (
-                <div className="card-img">
+                <div className={styles.CardImg}>
                     <img src={params.img} alt="event" />
                 </div>
             ) : (
                 ""
             )}
-            <div className="card-wrapper">
-                <p className="card-datetime">{params.when}</p>
+            <div className={styles.CardWrapper}>
+                <p className={styles.CardDatetime}>{params.when}</p>
                 {params.heading ? (
-                    <h1 className="card-heading">{params.heading}</h1>
+                    <h1 className={styles.CardHeading}>{params.heading}</h1>
                 ) : (
                     ""
                 )}
-                <p className="card-text">{params.children}</p>
+                <p className={styles.CardText}>{params.children}</p>
                 {params.button_text && params.button_to ? (
-                    <Link className="card-button" smooth to={params.button_to}>
+                    <Link
+                        className={styles.CardButton}
+                        smooth
+                        to={params.button_to}
+                    >
                         {params.button_text}
                     </Link>
                 ) : (
