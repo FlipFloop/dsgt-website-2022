@@ -1,5 +1,5 @@
 //imports
-import "./Navbar.css";
+import styles from "./Navbar.module.scss";
 
 import logo from "../../assets/images/dsgt/apple-touch-icon.png";
 import { useEffect, useState } from "react";
@@ -42,55 +42,63 @@ const Navbar = (params) => {
         //desktop navbar
         //just a navbar with buttons
         return (
-            <div {...params} className="desktop-navbar">
-                <div className="nav-wrapper">
-                    <div className="nav-wrapper-flex-left">
-                        <img className="logo" src={logo} alt="DSGT Logo" />
+            <div {...params} className={styles.DesktopNavbar}>
+                <div className={styles.NavWrapper}>
+                    <div className={styles.NavWrapperFlexLeft}>
+                        <img
+                            className={styles.logo}
+                            src={logo}
+                            alt="DSGT Logo"
+                        />
                         <h1
-                            className={`logo-text ${
-                                params.page === "home" ? "color" : ""
+                            className={`${styles.LogoText} ${
+                                params.page === "home" ? styles.color : ""
                             }`}
                         >
                             DSGT
                         </h1>
                     </div>
-                    <div className="nav-wrapper-flex-right">
-                        <HashLink className="nav-menuitem" smooth to="/">
+                    <div className={styles.NavWrapperFlexRight}>
+                        <HashLink className={styles.NavMenuitem} smooth to="/">
                             Home
                         </HashLink>
-                        <HashLink className="nav-menuitem" smooth to="#about">
+                        <HashLink
+                            className={styles.NavMenuitem}
+                            smooth
+                            to="#about"
+                        >
                             About
                         </HashLink>
                         <HashLink
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#bootcamp"
                         >
                             Bootcamp
                         </HashLink>
                         <HashLink
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#hacklytics"
                         >
                             Hacklytics
                         </HashLink>
                         <HashLink
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#projects"
                         >
                             Projects
                         </HashLink>
                         <HashLink
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#getinvolved"
                         >
                             Get Involved
                         </HashLink>
                         <a
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             href="https://member.datasciencegt.org"
                         >
                             Sign In
@@ -103,30 +111,42 @@ const Navbar = (params) => {
         //mobile navbar
         //have a hamburger to open the mobile nav menu and close it
         return (
-            <div {...params} className="mobile-navbar">
-                <div className="nav-wrapper">
-                    <div className="nav-wrapper-flex-center">
-                        <img className="logo" src={logo} alt="DSGT Logo" />
-                        <h1 className="logo-text">DSGT</h1>
+            <div {...params} className={styles.MobileNavbar}>
+                <div className={styles.NavWrapper}>
+                    <div className={styles.NavWrapperFlexCenter}>
+                        <img
+                            className={styles.logo}
+                            src={logo}
+                            alt="DSGT Logo"
+                        />
+                        <h1 className={styles.LogoText}>DSGT</h1>
                     </div>
                 </div>
                 <input
                     id="hamburger-checkbox"
+                    className={styles.HamburgerCheckbox}
                     type="checkbox"
                     onChange={handleCheck}
                 ></input>
-                <label htmlFor="hamburger-checkbox" className="nav-hamburger">
-                    <div className="hamburger-line hamburger-top"></div>
-                    <div className="hamburger-line hamburger-bottom"></div>
+                <label
+                    htmlFor="hamburger-checkbox"
+                    className={styles.NavHamburger}
+                >
+                    <div
+                        className={`${styles.HamburgerLine} ${styles.HamburgerTop}`}
+                    ></div>
+                    <div
+                        className={`${styles.HamburgerLine} ${styles.HamburgerBottom}`}
+                    ></div>
                 </label>
-                <div className="mobile-navbar-menu">
-                    <div className="nav-menu-flex">
-                        <HashLink className="nav-menuitem" smooth to="/">
+                <div className={styles.MobileNavbarMenu}>
+                    <div className={styles.NavMenuFlex}>
+                        <HashLink className={styles.NavMenuitem} smooth to="/">
                             Home
                         </HashLink>
                         <HashLink
                             onClick={handleClick}
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="#about"
                         >
@@ -134,7 +154,7 @@ const Navbar = (params) => {
                         </HashLink>
                         <HashLink
                             onClick={handleClick}
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#bootcamp"
                         >
@@ -142,7 +162,7 @@ const Navbar = (params) => {
                         </HashLink>
                         <HashLink
                             onClick={handleClick}
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#hacklytics"
                         >
@@ -150,7 +170,7 @@ const Navbar = (params) => {
                         </HashLink>
                         <HashLink
                             onClick={handleClick}
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#projects"
                         >
@@ -158,14 +178,14 @@ const Navbar = (params) => {
                         </HashLink>
                         <HashLink
                             onClick={handleClick}
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             smooth
                             to="/#getinvolved"
                         >
                             Get Involved
                         </HashLink>
                         <a
-                            className="nav-menuitem"
+                            className={styles.NavMenuitem}
                             href="https://member.datasciencegt.org"
                         >
                             Sign In

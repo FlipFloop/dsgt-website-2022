@@ -1,4 +1,4 @@
-.desktop-navbar {
+.DesktopNavbar {
     display: block;
     position: absolute;
     width: 100%;
@@ -12,7 +12,7 @@
         text-decoration: none;
         color: inherit;
     }
-    .nav-wrapper {
+    .NavWrapper {
         display: block;
         position: relative;
         height: 100%;
@@ -22,7 +22,7 @@
 
         //border: 1px solid blue;
 
-        > .nav-wrapper-flex-left {
+        > .NavWrapperFlexLeft {
             display: flex;
             position: absolute;
             height: 100%;
@@ -42,7 +42,7 @@
                 height: 4em;
                 margin: 0 20px;
             }
-            > .logo-text {
+            > .LogoText {
                 display: block;
                 position: relative;
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -63,7 +63,7 @@
                 text-shadow: -2px 2px 2px rgba(32, 163, 159, 0.425);
             }
         }
-        > .nav-wrapper-flex-right {
+        > .NavWrapperFlexRight {
             display: flex;
             position: absolute;
             height: 100%;
@@ -76,7 +76,7 @@
             align-items: center;
 
             //border: 1px solid blue;
-            > .nav-menuitem {
+            > .NavMenuitem {
                 display: block;
                 position: relative;
                 height: fit-content;
@@ -103,7 +103,7 @@
     }
 }
 
-.mobile-navbar {
+.MobileNavbar {
     display: block;
     position: absolute;
     width: 100%;
@@ -118,7 +118,7 @@
         color: inherit;
     }
 
-    > .nav-wrapper {
+    > .NavWrapper {
         display: block;
         position: relative;
         width: calc(100% - 10em);
@@ -128,7 +128,7 @@
         //border: 1px solid blue;
 
         z-index: 5;
-        > .nav-wrapper-flex-center {
+        > .NavWrapperFlexCenter {
             display: flex;
             position: relative;
             width: 100%;
@@ -143,7 +143,7 @@
                 width: auto;
                 margin: 0 5px;
             }
-            > .logo-text {
+            > .LogoText {
                 display: block;
                 position: relative;
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -161,7 +161,7 @@
             }
         }
     }
-    > .nav-hamburger {
+    > .NavHamburger {
         display: flex;
         position: absolute;
         height: 100%;
@@ -174,7 +174,7 @@
 
         z-index: 5;
 
-        > .hamburger-line {
+        > .HamburgerLine {
             display: block;
             position: relative;
             height: 3px;
@@ -194,7 +194,7 @@
         //     //margin: 1em auto 0 auto;
         // }
     }
-    > .mobile-navbar-menu {
+    > .MobileNavbarMenu {
         display: block;
         position: fixed;
         height: 0px;
@@ -211,7 +211,7 @@
 
         //border: 1px solid red;
 
-        > .nav-menu-flex {
+        > .NavMenuFlex {
             display: flex;
             position: relative;
             height: 100vh;
@@ -223,11 +223,11 @@
             justify-content: flex-start;
             align-items: center;
 
-            gap: 40px;
+            // gap: 40px;
 
             z-index: 3;
 
-            > .nav-menuitem {
+            > .NavMenuitem {
                 display: block;
                 position: relative;
                 width: fit-content;
@@ -258,31 +258,32 @@
     }
 }
 
-#hamburger-checkbox {
+.HamburgerCheckbox {
     display: none;
-    &:checked + .nav-hamburger {
-        > .hamburger-line {
+    &:checked + .NavHamburger {
+        > .HamburgerLine {
             border-color: rgb(255, 255, 255);
         }
-        > .hamburger-top {
+        > .HamburgerTop {
             transform: translateY(calc(0.5em + 1px)) rotate(45deg);
         }
-        > .hamburger-bottom {
+        > .HamburgerBottom {
             transform: translateY(calc(-0.5em - 1px)) rotate(-45deg);
         }
     }
 
-    &:checked + .nav-hamburger + .mobile-navbar-menu {
+    &:checked + .NavHamburger + .MobileNavbarMenu {
         top: 0;
         height: 100vh;
+        padding-bottom: 5em;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    .desktop-navbar {
-        > .nav-wrapper {
-            > .nav-wrapper-flex-right {
-                > .nav-menuitem {
+    .DesktopNavbar {
+        > .NavWrapper {
+            > .NavWrapperFlexRight {
+                > .NavMenuitem {
                     padding: 30px 10px;
                 }
             }

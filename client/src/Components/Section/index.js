@@ -1,15 +1,15 @@
 //imports
-import "./Section.css";
+import styles from "./Section.module.scss";
 
 /**
  * a section that has a max-width to fix wide-monitors
- * @param {*} params 
- * @returns 
+ * @param {*} params
+ * @returns
  */
 const Section = (params) => {
     return (
-        <div className="section" {...params}>
-            <div className="section-wrapper">{params.children}</div>
+        <div className={styles.section} {...params}>
+            <div className={styles.SectionWrapper}>{params.children}</div>
         </div>
     );
 };
