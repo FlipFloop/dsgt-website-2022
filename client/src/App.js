@@ -6,7 +6,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 //import pages
 import Home from "./Pages/Home";
-// import About from "./Pages/About";
+import About from "./Pages/About";
 
 function App() {
     // //the width of the window
@@ -26,7 +26,7 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/*" element={<Home />} />
-                    {/* <Route path="/about" element={<About />} /> */}
+                    <Route path="/about" element={<About />} />
                 </Routes>
             </Router>
         </div>

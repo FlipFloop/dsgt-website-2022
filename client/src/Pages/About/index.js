@@ -1,5 +1,5 @@
 //imports
-import "./About.css";
+import styles from "./About.module.scss";
 
 import { useState, useEffect } from "react";
 
@@ -34,8 +34,8 @@ const About = (params) => {
                 desc="The people who make DSGT what it is"
             />
             <Section id="teams">
-                <div className="teams-flex">
-                    <TeamCard title="Tech Team">fjdsklfjdsjfkdj lff</TeamCard>
+                <div className={styles.TeamFlex}>
+                    <TeamCard title="Tech Team">The Tech Team does...</TeamCard>
                 </div>
             </Section>
             <Footer />
