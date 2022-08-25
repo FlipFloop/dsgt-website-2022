@@ -1,6 +1,6 @@
 $hero-foreground-color: rgb(229, 230, 219);
 
-.small-hero {
+.SmallHero {
     display: block;
     position: relative;
     width: 100%;
@@ -10,7 +10,7 @@ $hero-foreground-color: rgb(229, 230, 219);
 
     animation: fade-in 1s;
 
-    .hero-sep {
+    .HeroSep {
         display: block;
         position: relative;
         width: 8em;
@@ -44,7 +44,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         }
     }
 
-    > .small-hero-blob {
+    > .SmallHeroBlob {
         display: block;
         position: absolute;
         z-index: -1;
@@ -53,7 +53,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         top: 0;
         right: 0;
     }
-    > .small-hero-wrapper {
+    > .SmallHeroWrapper {
         display: block;
         position: relative;
         height: 100%;
@@ -62,7 +62,7 @@ $hero-foreground-color: rgb(229, 230, 219);
         margin: 0 auto;
         padding-top: 8em;
 
-        > .small-hero-left {
+        > .SmallHeroLeft {
             display: flex;
             position: relative;
             height: 100%;
@@ -113,9 +113,9 @@ $hero-foreground-color: rgb(229, 230, 219);
 }
 
 @media only screen and (max-width: 1000px) {
-    .small-hero {
-        > .small-hero-wrapper {
-            > .small-hero-left {
+    .SmallHero {
+        > .SmallHeroWrapper {
+            > .SmallHeroLeft {
                 width: 100%;
                 font-size: 12px;
             }

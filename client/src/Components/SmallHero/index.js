@@ -1,5 +1,5 @@
 //imports
-import "./SmallHero.css";
+import styles from "./SmallHero.module.scss";
 
 import smallblob from "../../assets/images/blobs/small-header--export.svg";
 
@@ -10,15 +10,15 @@ import smallblob from "../../assets/images/blobs/small-header--export.svg";
  */
 const SmallHero = (params) => {
     return (
-        <div {...params} className="small-hero">
-            <img className="small-hero-blob" src={smallblob} alt="blob" />
-            <div className="small-hero-wrapper">
-                <div className="small-hero-left">
-                    <h1 className="major">{params.title}</h1>
-                    <h2 className="minor">
+        <div {...params} className={styles.SmallHero}>
+            <img className={styles.SmallHeroBlob} src={smallblob} alt="blob" />
+            <div className={styles.SmallHeroWrapper}>
+                <div className={styles.SmallHeroLeft}>
+                    <h1 className={styles.major}>{params.title}</h1>
+                    <h2 className={styles.minor}>
                         {params.desc || params.description}
                     </h2>
-                    <div className="hero-sep"></div>
+                    <div className={styles.HeroSep}></div>
                 </div>
             </div>
         </div>
