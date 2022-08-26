@@ -1,5 +1,5 @@
 //imports
-import "./App.css";
+import styles from "./App.module.scss";
 
 //import react stuff
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -22,7 +22,7 @@ function App() {
     // }, []);
 
     return (
-        <div className="App">
+        <div className={styles.App}>
             <Router>
                 <Routes>
                     <Route path="/*" element={<Home />} />
