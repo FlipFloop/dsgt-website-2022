@@ -1,5 +1,5 @@
 //imports
-import "./Home.css";
+import styles from "./Home.module.scss";
 
 import { useState, useEffect } from "react";
 //import { Link } from "react-router-dom";
@@ -103,24 +103,27 @@ const Home = (params) => {
                     members. Here's how we look like:
                 </Mini>
                 <br></br>
-                <div className="charts-flex">
-                    <div className="chart-card">
+                <div className={styles.ChartsFlex}>
+                    <div className={styles.ChartCard}>
                         <Minor>CLASS DEMOGRAPHICS</Minor>
-                        <div className="pie-chart">
+                        <div className={styles.PieChart}>
                             <Pie data={ClassData} options={chartOptions} />
                         </div>
                     </div>
-                    <div className="chart-card">
+                    <div className={styles.ChartCard}>
                         <Minor type="b">MAJOR DEMOGRAPHICS</Minor>
-                        <div className="pie-chart">
+                        <div className={styles.PieChart}>
                             <Pie data={MajorData} options={chartOptions} />
                         </div>
                     </div>
                 </div>
             </Section>
             <Section id="bootcamp">
-                <div className="FlexRow" style={{flexWrap: "wrap-reverse"}}>
-                    <div className="SectionHalf">
+                <div
+                    className={styles.FlexRow}
+                    style={{ flexWrap: "wrap-reverse" }}
+                >
+                    <div className={styles.SectionHalf}>
                         <Major type="a">Bootcamp</Major>
                         <Mini>
                             We teach our members core data science skills
@@ -138,9 +141,9 @@ const Home = (params) => {
                             </LearnMore>
                         </Mini>
                     </div>
-                    <div className="SectionHalf">
+                    <div className={styles.SectionHalf}>
                         <img
-                            className="SectionImage"
+                            className={styles.SectionImage}
                             src={slide8}
                             alt="Hacklytics"
                         />
@@ -148,15 +151,15 @@ const Home = (params) => {
                 </div>
             </Section>
             <Section id="hacklytics">
-                <div className="FlexRow">
-                    <div className="SectionHalf">
+                <div className={styles.FlexRow}>
+                    <div className={styles.SectionHalf}>
                         <img
-                            className="SectionImage"
+                            className={styles.SectionImage}
                             src={slide6}
                             alt="Hacklytics"
                         />
                     </div>
-                    <div className="SectionHalf">
+                    <div className={styles.SectionHalf}>
                         <Major type="b">Hacklytics</Major>
                         <Mini>
                             Hacklytics is Georgia Tech’s 36 hour datathon
@@ -192,7 +195,7 @@ const Home = (params) => {
                     expo. Here are some of the projects we are currently working
                     on:
                 </Mini>
-                <div className="cards">
+                <div className={styles.Cards}>
                     <Card img={storm} heading="Stormalytics">
                         Stormalytics, an intelligent tornado activity prediction
                         system, forecasts tornadoes based on records, rich
@@ -221,7 +224,7 @@ const Home = (params) => {
             <Section id="getinvolved">
                 <Major type="b">Get Involved</Major>
                 <Mini>Check out these opportunities to get involved:</Mini>
-                <div className="cards">
+                <div className={styles.Cards}>
                     <EventCard
                         img={slide1}
                         heading="Join DSGT"
