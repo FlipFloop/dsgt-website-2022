@@ -195,7 +195,7 @@ const Home = (params) => {
                     expo. Here are some of the projects we are currently working
                     on:
                 </Mini>
-                <div className={styles.Cards}>
+                <div className={styles.ProjectCards}>
                     <Card img={storm} heading="Stormalytics">
                         Stormalytics, an intelligent tornado activity prediction
                         system, forecasts tornadoes based on records, rich
