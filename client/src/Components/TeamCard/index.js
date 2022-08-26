@@ -1,12 +1,12 @@
 //imports
-import "./TeamCard.css";
+import styles from "./TeamCard.module.scss";
 
 const TeamCard = (params) => {
     //pass in img, title, and in params.children the content
     return (
-        <div className="team-card">
-            <h1 className="major">{params.title}</h1>
-            <p className="content">{params.children}</p>
+        <div className={styles.TeamCard}>
+            <h1 className={styles.Major}>{params.title}</h1>
+            <p className={styles.Content}>{params.children}</p>
         </div>
     );
 };
