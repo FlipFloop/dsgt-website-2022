@@ -1,7 +1,7 @@
 //imports
 import styles from "./Major.module.scss";
 
-import majorA from "../../../assets/images/blobs/major--export.svg";
+// import majorA from "../../../assets/images/blobs/major--export.svg";
 
 /**
  * A major header -- pass in type (a,b) for different colors
