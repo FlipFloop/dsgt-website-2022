@@ -1,22 +1,22 @@
-.minor-text {
+.MinorText {
     // color: #ecae58;
     // text-shadow: -1px 1px 1px rgba($color: #ecae58, $alpha: 0.5);
     margin: 0;
     font-size: 1.5em;
 }
 
-.minor-a {
+.MinorA {
     color: #74b1aa;
     text-shadow: -1px 1px 1px rgba($color: #67a09a, $alpha: 0.5);
 }
 
-.minor-b {
+.MinorB {
     color: #ecae58;
     text-shadow: -1px 1px 1px rgba($color: #ecae58, $alpha: 0.5);
 }
 
 @media only screen and (max-width: 1000px) {
-    .minor-text {
+    .MinorText {
         margin: 0;
     }
 }

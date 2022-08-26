@@ -1,5 +1,5 @@
 //imports
-import "./Mini.css";
+import styles from "./Mini.module.scss";
 
 /**
  * mini text
@@ -7,6 +7,6 @@ import "./Mini.css";
  * @returns 
  */
 const Mini = (params) => {
-    return <p className="mini-text">{params.children}</p>;
+    return <p className={styles.MiniText}>{params.children}</p>;
 };
 export default Mini;

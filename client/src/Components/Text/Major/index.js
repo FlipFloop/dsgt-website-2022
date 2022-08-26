@@ -1,5 +1,5 @@
 //imports
-import "./Major.css";
+import styles from "./Major.module.scss";
 
 import majorA from "../../../assets/images/blobs/major--export.svg";
 
@@ -15,7 +15,12 @@ const Major = (params) => {
     }
 
     return (
-        <h1 {...params} className={`major-text major-${type}`}>
+        <h1
+            {...params}
+            className={`${styles.MajorText} ${
+                styles[`Major${type.toUpperCase()}`]
+            }`}
+        >
             {params.children}
         </h1>
     );

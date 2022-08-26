@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,CAAC;CACZ;;AAED,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,MAAM;EACrC,AAAA,UAAU,CAAC;IACP,MAAM,EAAE,CAAC;GACZ",
-    "sources": [
-        "Mini.scss"
-    ],
-    "names": [],
-    "file": "Mini.css"
-}
