@@ -79,8 +79,7 @@ const About = (params) => {
                         The Technology Team specializes in frontend
                         web-development as well as backend systems. We work on
                         the many websites used by DSGT and Hacklytics, most
-                        notibly being the site you are on now and the Membership
-                        Portal.
+                        notibly being the site and the Membership Portal.
                     </TeamCard>
                     <TeamCard
                         name="Jessi Chen"
