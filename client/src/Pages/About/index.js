@@ -35,7 +35,7 @@ const About = (params) => {
                 title="Meet The Team"
                 desc="The people who make DSGT what it is"
             />
-            <Section id="teams">
+            <Section id="teams" fullSection={true}>
                 <div className={styles.TeamFlex}>
                     <TeamCard
                         name="John Ramberger"
@@ -44,8 +44,9 @@ const About = (params) => {
                     >
                         The Technology Team specializes in frontend
                         web-development as well as backend systems. We work on
-                        the many websites used by DSGT and Hacklytics, most notibly
-                        being the site you are on now and the Membership Portal.
+                        the many websites used by DSGT and Hacklytics, most
+                        notibly being the site you are on now and the Membership
+                        Portal.
                     </TeamCard>
                 </div>
             </Section>

@@ -8,7 +8,12 @@ import styles from "./Section.module.scss";
  */
 const Section = (params) => {
     return (
-        <div className={styles.section} {...params}>
+        <div
+            className={`${styles.section} ${
+                params.fullSection ? styles.FullSection : ""
+            }`}
+            {...params}
+        >
             <div className={styles.SectionWrapper}>{params.children}</div>
         </div>
     );
