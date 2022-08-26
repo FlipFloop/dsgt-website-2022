@@ -1,10 +1,45 @@
 .TeamCard {
     display: block;
     position: relative;
+    max-width: 300px;
     width: 100%;
     height: 300px;
 
     border-radius: 5px;
     //background-color: #fff;
+    padding: 1em;
+    padding-top: 5em;
+    background: #eee;
     box-shadow: 3px 3px 5px 2px rgba($color: #000000, $alpha: 0.3);
+    > .Image {
+        display: block;
+        height: calc(10em);
+        width: calc(10em);
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+
+        border: 10px solid #eee;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, calc(-50% - 0.5em));
+        > img {
+            position: absolute;
+            max-height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .Major {
+        font-size: 1.5em;
+    }
+    .Title {
+        font-size: 1em;
+        font-weight: 500;
+        color: #444;
+    }
+    .Content {
+        font-size: 1em;
+    }
 }

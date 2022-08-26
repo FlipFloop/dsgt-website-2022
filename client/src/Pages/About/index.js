@@ -10,6 +10,8 @@ import Section from "../../Components/Section";
 import SmallHero from "../../Components/SmallHero";
 import TeamCard from "../../Components/TeamCard";
 
+import John from "../../assets/images/portraits/john.jpg";
+
 const About = (params) => {
     //the width of the window
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -35,7 +37,16 @@ const About = (params) => {
             />
             <Section id="teams">
                 <div className={styles.TeamFlex}>
-                    <TeamCard title="Tech Team">The Tech Team does...</TeamCard>
+                    <TeamCard
+                        name="John Ramberger"
+                        title="Director of Technology"
+                        img={John}
+                    >
+                        The Technology Team specializes in frontend
+                        web-development as well as backend systems. We work on
+                        the many websites used by DSGT and Hacklytics, most notibly
+                        being the site you are on now and the Membership Portal.
+                    </TeamCard>
                 </div>
             </Section>
             <Footer />
