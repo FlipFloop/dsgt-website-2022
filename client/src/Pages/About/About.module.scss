@@ -4,11 +4,13 @@
     width: 100%;
     height: fit-content;
 
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 0 20px;
+    gap: 3em;
+
 
     //border: 1px solid blue;
 }

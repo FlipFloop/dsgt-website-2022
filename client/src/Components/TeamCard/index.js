@@ -5,8 +5,23 @@ const TeamCard = (params) => {
     //pass in img, name, title, and in params.children the content
     return (
         <div className={styles.TeamCard}>
-            <div className={styles.Image}>
-                <img alt={`${params.name}`} src={params.img} />
+            <div
+                className={`${styles.Image} ${
+                    params.wide ? styles.WideImage : ""
+                } ${params.tall ? styles.TallImage : ""}
+                ${params.zoom && params.top ? styles.ZoomImageTOP : ""}
+                ${params.zoom && params.bottom ? styles.ZoomImageBOTTOM : ""}
+                ${
+                    params.zoom && !(params.top && params.bottom)
+                        ? styles.ZoomImage
+                        : ""
+                }`}
+            >
+                <img
+                    alt={`${params.name}`}
+                    src={params.img}
+                    style={{ top: params.top }}
+                />
             </div>
             <h2 className={styles.Title}>{params.title}</h2>
             <h1 className={styles.Major}>{params.name}</h1>
