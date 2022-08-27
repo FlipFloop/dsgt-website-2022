@@ -68,7 +68,13 @@ const About = (params) => {
                         zoom
                         top="40%"
                     >
-                        Description
+                        The projects team consists of numerous focus groups
+                        working on industry and research oriented data-science
+                        projects. Getting involved with projects is a great way
+                        to gain hands-on experience with AI/ ML and meet new
+                        people while collaborating on a unique idea. Each
+                        semester we showcase all projects at the DSGT project
+                        expo!
                     </TeamCard>
                     <TeamCard
                         name="John Ramberger"
@@ -86,7 +92,16 @@ const About = (params) => {
                         title="Director of Content"
                         img={Jessi}
                     >
-                        Description
+                        The content team manages the Bootcamp and Udemy courses,
+                        where we teach our members core data science skills on a
+                        start-to-finish journey. We provide workshops on
+                        beginner-friendly data science and machine learning
+                        topics and help members complete a fully polished and
+                        professional data science project by the end of
+                        Bootcamp. We are also actively working to improve our
+                        course materials, our website, and students' learning
+                        experience through an exciting collaboration with
+                        Deepnote.
                     </TeamCard>
                     <TeamCard
                         name="Reshma Gudla"
@@ -109,7 +124,11 @@ const About = (params) => {
                         zoom
                         top="20%"
                     >
-                        Description
+                        The Internal Affairs Team manages membership moderation
+                        and develops ideas to improve the membership experience.
+                        We also act as an “internal health check” for the club
+                        by analyzing club data to see where DSGT is succeeding
+                        and where it could do better.
                     </TeamCard>
                     <TeamCard
                         name="Pranay Begwani"
