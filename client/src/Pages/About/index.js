@@ -42,7 +42,7 @@ const About = (params) => {
                 title="Meet The Team"
                 desc="The people who make DSGT what it is"
             />
-            <Section id="teams" fullSection={true}>
+            <Section id="teams" makefull="yes">
                 <div className={styles.TeamFlex}>
                     <TeamCard
                         name="Shreiyas Saraf"

@@ -10,7 +10,7 @@ const Section = (params) => {
     return (
         <div
             className={`${styles.section} ${
-                params.fullSection ? styles.FullSection : ""
+                params.makefull ? styles.FullSection : ""
             }`}
             {...params}
         >
