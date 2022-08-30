@@ -229,7 +229,7 @@ const Home = (params) => {
                         img={slide1}
                         heading="Join DSGT"
                         button_text="Learn More"
-                        button_to="#"
+                        button_to="https://member.datasciencegt.org"
                     >
                         Take part in the largest data science organization at
                         Georgia Tech!
@@ -238,14 +238,14 @@ const Home = (params) => {
                         img={slide7}
                         heading="Apply for Leadership Positions"
                         button_text="Learn More"
-                        button_to="#"
+                        button_to="https://member.datasciencegt.org"
                     >
                         Join one of the many executive teams that help run DSGT!
                     </EventCard>
                     <EventCard
                         img={slide6}
                         heading="Hacklytics"
-                        when="feb 22-24 2023"
+                        when="feb 10-12 2023"
                         button_text="Learn More"
                         button_to="#hacklytics"
                     >
