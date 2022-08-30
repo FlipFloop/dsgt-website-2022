@@ -59,7 +59,11 @@ const About = (params) => {
                         zoom
                         top
                     >
-                        Description
+                        The Hacklytics team works to organize and conduct DSGT’s
+                        flagship hackathon every Spring. This is a great way to
+                        network with sponsors and develop strong communication
+                        and management skills. Plus, you get to meet many new
+                        people every year!
                     </TeamCard>
                     <TeamCard
                         name="Krishi Manek"
