@@ -27,13 +27,23 @@ const EventCard = (params) => {
                 )}
                 <p className={styles.CardText}>{params.children}</p>
                 {params.button_text && params.button_to ? (
-                    <Link
-                        className={styles.CardButton}
-                        smooth
-                        to={params.button_to}
-                    >
-                        {params.button_text}
-                    </Link>
+                    params.button_to.toLowerCase().includes("http") ? (
+                        <a
+                            className={styles.CardButton}
+                            smooth
+                            href={params.button_to}
+                        >
+                            {params.button_text}
+                        </a>
+                    ) : (
+                        <Link
+                            className={styles.CardButton}
+                            smooth
+                            to={params.button_to}
+                        >
+                            {params.button_text}
+                        </Link>
+                    )
                 ) : (
                     ""
                 )}
