@@ -41,44 +41,62 @@ const Footer = (params) => {
             <div className={styles.FooterWrapper}>
                 <div className={styles.Major}>
                     <img src={logo} className={styles.logo} alt="logo" />
-                    <h1>Data Science @ GT</h1>
+                    <h1>DSGT</h1>
                 </div>
                 <div className={styles.FooterSection}>
                     <h2 className={styles.minor}>Company</h2>
                     <Link
                         className={`${styles.mini} ${styles.link}`}
-                        to="/about"
+                        to="#about"
                     >
                         About Us
                     </Link>
-                    <Link className={`${styles.mini} ${styles.link}`} to="#">
+                    <Link
+                        className={`${styles.mini} ${styles.link}`}
+                        to="mailto:hello@datasciencegt.org"
+                    >
                         Contact
                     </Link>
                 </div>
                 <div className={styles.FooterSection}>
                     <h2 className={styles.minor}>Connect with Us</h2>
-                    <Link className={`${styles.mini} ${styles.link}`} to="#">
+                    <Link
+                        className={`${styles.mini} ${styles.link}`}
+                        to="mailto:hello@datasciencegt.org"
+                    >
                         Email
                     </Link>
-                    <Link className={`${styles.mini} ${styles.link}`} to="#">
+                    <a
+                        className={`${styles.mini} ${styles.link}`}
+                        href="https://www.instagram.com/datasciencegt/"
+                    >
                         Instagram
-                    </Link>
-                    <Link className={`${styles.mini} ${styles.link}`} to="#">
+                    </a>
+                    <a
+                        className={`${styles.mini} ${styles.link}`}
+                        href="https://www.facebook.com/datasciencegt/"
+                    >
+                        Facebook
+                    </a>
+                    <a
+                        className={`${styles.mini} ${styles.link}`}
+                        href="https://www.linkedin.com/company/dsgt/"
+                    >
                         LinkedIn
-                    </Link>
-                    <Link className={`${styles.mini} ${styles.link}`} to="#">
+                    </a>
+                    <a
+                        className={`${styles.mini} ${styles.link}`}
+                        href="https://github.com/DataScience-GT"
+                    >
                         Github
-                    </Link>
+                    </a>
                 </div>
-                <div className={styles.FooterSection}>
+                {/* <div className={styles.FooterSection}>
                     <h2 className={styles.minor}>Join the Community</h2>
                     <Link className={`${styles.mini} ${styles.link}`} to="#">
                         Slack
                     </Link>
-                    <Link className={`${styles.mini} ${styles.link}`} to="#">
-                        Discord
-                    </Link>
-                </div>
+                </div> */}
 
                 <div className={styles.FooterSection}>
                     <h2 className={styles.minor}>
