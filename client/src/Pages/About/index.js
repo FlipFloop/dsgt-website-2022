@@ -50,7 +50,13 @@ const About = (params) => {
                         img={Shreiyas}
                         top="60%"
                     >
-                        Description
+                        I don’t have a specific division functioning under me
+                        but the team I handle is the Executive Board. We are
+                        responsible for the functioning of Data Science at
+                        Georgia Tech - from administering the bootcamp, running
+                        projects, holding super cool events with companies like
+                        Amazon and Accenture as well as our annual data science
+                        hackathon, Hacklytics, every year!
                     </TeamCard>
                     <TeamCard
                         name="Pratham Mehta"
