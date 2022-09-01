@@ -238,7 +238,7 @@ const Home = (params) => {
                         img={slide7}
                         heading="Apply for Leadership Positions"
                         button_text="Learn More"
-                        button_to="https://member.datasciencegt.org"
+                        button_to="https://member.datasciencegt.org/portal/forms"
                     >
                         Join one of the many executive teams that help run DSGT!
                     </EventCard>
