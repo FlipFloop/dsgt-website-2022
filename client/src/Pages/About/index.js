@@ -48,7 +48,6 @@ const About = (params) => {
                         name="Shreiyas Saraf"
                         title="President"
                         img={Shreiyas}
-                        top="60%"
                     >
                         I don’t have a specific division functioning under me
                         but the team I handle is the Executive Board. We are
@@ -62,8 +61,6 @@ const About = (params) => {
                         name="Pratham Mehta"
                         title="Vice President & Director of Hacklytics"
                         img={Pratham}
-                        zoom
-                        top
                     >
                         The Hacklytics team works to organize and conduct DSGT’s
                         flagship hackathon every Spring. This is a great way to
@@ -75,8 +72,6 @@ const About = (params) => {
                         name="Krishi Manek"
                         title="Director of Projects"
                         img={Krishi}
-                        zoom
-                        top="40%"
                     >
                         The projects team consists of numerous focus groups
                         working on industry and research oriented data-science
@@ -101,6 +96,7 @@ const About = (params) => {
                         name="Jessi Chen"
                         title="Director of Content"
                         img={Jessi}
+                        wide
                     >
                         The content team manages the Bootcamp and Udemy courses,
                         where we teach our members core data science skills on a
@@ -117,9 +113,7 @@ const About = (params) => {
                         name="Reshma Gudla"
                         title="Director of Marketing"
                         img={Reshma}
-                        tall
-                        zoom
-                        top="-20%"
+                        wide
                     >
                         The marketing team focuses on social media initiatives,
                         graphic design, newsletters, outreach, and more to
@@ -131,8 +125,7 @@ const About = (params) => {
                         name="Devarsh Pandya"
                         title="Director of Internal Affairs"
                         img={Devarsh}
-                        zoom
-                        top="20%"
+                        wide
                     >
                         The Internal Affairs Team manages membership moderation
                         and develops ideas to improve the membership experience.
