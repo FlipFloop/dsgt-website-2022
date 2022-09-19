@@ -27,6 +27,7 @@ import slide1 from "../../assets/images/slides/slide1.jpg";
 import slide6 from "../../assets/images/slides/slide6.jpg";
 import slide7 from "../../assets/images/slides/slide7.jpg";
 import slide8 from "../../assets/images/slides/slide8.jpg";
+import slide0 from "../../assets/images/slides/slide0.jpg";
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
@@ -79,22 +80,37 @@ const Home = (params) => {
             <Navbar screen_width={windowWidth} page="home" />
             <Hero screen_width={windowWidth} />
             <Section id="about">
-                <Major type="a">About Us</Major>
-                <Mini>
-                    As the largest student-run data science organization on
-                    campus, we are dedicated to developing technical skills in
-                    data science through various activities and events such as
-                    club projects, workshops, guest speakers and professors. Our
-                    organization serves as a platform for undergraduate and
-                    graduate students of all majors at Georgia Tech to learn
-                    about and practice data science and analytics. We are a
-                    focused club with three main components: projects,
-                    bootcamps, and Hacklytics.
-                </Mini>
-                <br />
-                <Mini>
-                    <LearnMore to="about">Meet the Team</LearnMore>
-                </Mini>
+                <div
+                    className={styles.FlexRow}
+                    style={{ flexWrap: "wrap-reverse" }}
+                >
+                    <div className={styles.SectionHalf}>
+                        <Major type="a">About Us</Major>
+                        <Mini>
+                            As the largest student-run data science organization
+                            on campus, we are dedicated to developing technical
+                            skills in data science through various activities
+                            and events such as club projects, workshops, guest
+                            speakers and professors. Our organization serves as
+                            a platform for undergraduate and graduate students
+                            of all majors at Georgia Tech to learn about and
+                            practice data science and analytics. We are a
+                            focused club with three main components: projects,
+                            bootcamps, and Hacklytics.
+                        </Mini>
+                        <br />
+                        <Mini>
+                            <LearnMore to="about">Meet the Team</LearnMore>
+                        </Mini>
+                    </div>
+                    <div className={styles.SectionHalf}>
+                        <img
+                            className={styles.SectionImage}
+                            src={slide0}
+                            alt="The DSGT Exec Team"
+                        />
+                    </div>
+                </div>
             </Section>
             <Section id="stats">
                 <Major type="b">Who We Are</Major>
